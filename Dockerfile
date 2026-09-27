@@ -1,4 +1,7 @@
 FROM amazoncorretto:17
-COPY ./target/classes/com /tmp/com
-WORKDIR /tmp
-ENTRYPOINT ["java", "com.napier.population.App"]
+
+WORKDIR /app
+
+COPY target/population-reporting-system-1.0-SNAPSHOT-jar-with-dependencies.jar app.jar
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
