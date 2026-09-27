@@ -1,10 +1,14 @@
 package com.napier.population;
 
+import com.napier.population.models.Country;
+import com.napier.population.reports.Requirement1;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) throws InterruptedException {
@@ -27,6 +31,11 @@ public class App {
                                 "Number of countries: " + results.getInt(1));
                     }
                 }
+
+                //Requirement 1 - Gernate All Countries With Polulation Largest To Smallest.
+                Requirement1 req1 = new Requirement1(con);
+                List<Country> countries = req1.getAllCountriesWorld();
+                req1.printCountries(countries);
 
                 // The connection closes automatically when leaving this block.
                 return;
