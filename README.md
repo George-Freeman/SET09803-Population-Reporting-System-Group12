@@ -32,7 +32,7 @@ Angela Lynn Wandera,
 | ID | Name | Met | Screenshot |
 | :--- | :--- | :---: | :---: |
 | 1 | All the countries in the world organised by largest population to smallest. | Yes | <img src="https://github.com/user-attachments/assets/22ecf90c-b0cf-48ef-aec8-391da2bac60a" width="300" alt="Requirement 1 Screenshot" /> |
-| 2 | All the countries in a continent organised by largest population to smallest. | No | |
+| 2 | All the countries in a continent organised by largest population to smallest. | Yes | <img width="300"  alt="image" src="https://github.com/user-attachments/assets/5654d48b-ba5e-4185-8d43-fc9c5dbdb4ff" />|
 | 3 | All the countries in a region organised by largest population to smallest. | No | |
 | 4 | The top N populated countries in the world where N is provided by the user. | No | |
 | 5 | The top N populated countries in a continent where N is provided by the user. | No | |
