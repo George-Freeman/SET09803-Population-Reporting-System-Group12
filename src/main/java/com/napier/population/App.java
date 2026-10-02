@@ -2,13 +2,16 @@ package com.napier.population;
 
 import com.napier.population.models.Country;
 import com.napier.population.reports.Requirement1;
+import com.napier.population.reports.Requirement2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws InterruptedException {
@@ -32,10 +35,51 @@ public class App {
                     }
                 }
 
-                //Requirement 1 - Gernate All Countries With Polulation Largest To Smallest.
-                Requirement1 req1 = new Requirement1(con);
-                List<Country> countries = req1.getAllCountriesWorld();
-                req1.printCountries(countries);
+                // Add In Number Input For Selecting Requirement.
+                Scanner scanner = new Scanner(System.in);
+                int requirement;
+
+                do {
+                    System.out.println("Please Enter Required Issue Between 1 and 32: ");
+                    try {
+                        requirement = Integer.parseInt(scanner.nextLine().trim());
+                        if (requirement < 1 || requirement > 32) {
+                            System.out.println("Please Enter Valid Value Between 1 and 32.");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Invalid input. Please enter a valid number.");
+                        requirement = 0; // keeps loop running
+                    }
+                } while (requirement < 1 || requirement > 32);
+
+            // Switch Based On Requirement
+                switch (requirement) {
+                    case 1:
+                        Requirement1 req1 = new Requirement1(con);
+                        List<Country> countries = req1.getAllCountriesWorld();
+                        req1.printCountries(countries);
+                        break;
+
+                    case 2:
+                        List<String> continents =
+                                Arrays.asList("Asia", "Europe", "North America", "Africa", "Oceania", "Antarctica", "South America");
+                        String continent;
+
+                        while (true) {
+                            System.out.println("Enter continent: ");
+                            continent = scanner.nextLine().trim();
+                            String finalC = continent;
+                            continent = continents.stream().filter(c -> c.equalsIgnoreCase(finalC)).findFirst().orElse(null);
+
+                            if (continent != null) break;
+                            System.out.println("Invalid continent. Try again.\n");
+                        }
+
+                        Requirement2 req2 = new Requirement2(con);
+                        req2.printCountries(req2.getCountriesInContinent(continent));
+                        break;
+                }
+
 
                 // The connection closes automatically when leaving this block.
                 return;
