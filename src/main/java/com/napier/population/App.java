@@ -4,6 +4,7 @@ import com.napier.population.models.Country;
 import com.napier.population.reports.Requirement1;
 import com.napier.population.reports.Requirement2;
 import com.napier.population.reports.Requirement3;
+import com.napier.population.reports.Requirement4;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -104,6 +105,25 @@ public class App {
                                 req3.printCountries(regionCountries);
                             }
 
+                            break;
+
+                        case 4:
+                            int n = 0;
+                            while (n <= 0) {
+                                System.out.println("Enter the number of top populated countries to display (N > 0): ");
+                                try {
+                                    n = Integer.parseInt(scanner.nextLine().trim());
+                                    if (n <= 0) {
+                                        System.out.println("N must be greater than 0. Try again.\n");
+                                    }
+                                } catch (NumberFormatException e) {
+                                    System.out.println("Invalid number. Try again.\n");
+                                }
+                            }
+
+                            Requirement4 req4 = new Requirement4(con);
+                            List<Country> topCountries = req4.getTopNCountriesWorld(n);
+                            req4.printCountries(topCountries);
                             break;
 
                         default:
