@@ -33,8 +33,14 @@ jobs:
       - name: Validate Docker Compose
         run: docker compose config --quiet
 
-      - name: Build and run application with MySQL
-        run: docker compose up --build --abort-on-container-exit --exit-code-from app
+      - name: Build Docker containers
+        run: docker compose build
+
+      - name: Start MySQL
+        run: docker compose up -d db
+
+      - name: Run application
+        run: echo "1" | docker compose run --rm -T app
 
       - name: Show container logs
         if: always()
