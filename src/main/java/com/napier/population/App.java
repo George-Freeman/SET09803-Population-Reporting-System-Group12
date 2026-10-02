@@ -3,6 +3,7 @@ package com.napier.population;
 import com.napier.population.models.Country;
 import com.napier.population.reports.Requirement1;
 import com.napier.population.reports.Requirement2;
+import com.napier.population.reports.Requirement3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -91,6 +92,20 @@ public class App {
                             Requirement2 req2 = new Requirement2(con);
                             req2.printCountries(req2.getCountriesInContinent(continent));
                             break;
+
+                        case 3:
+                            System.out.print("Enter region: ");
+                            String region = scanner.nextLine().trim();
+                            Requirement3 req3 = new Requirement3(con);
+                            List<Country> regionCountries = req3.getCountriesByRegion(region);
+                            if (regionCountries.isEmpty()) {
+                                System.out.println("No countries found for region: " + region);
+                            } else {
+                                req3.printCountries(regionCountries);
+                            }
+
+                            break;
+
                         default:
                             System.out.println("Requirement " + requirement + " has not been implemented yet.");
                             break;
