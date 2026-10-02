@@ -37,52 +37,69 @@ public class App {
 
                 // Add In Number Input For Selecting Requirement.
                 Scanner scanner = new Scanner(System.in);
-                int requirement;
+                boolean running = true;
+                while (running) {
+                    int requirement;
 
-                do {
-                    System.out.println("Please Enter Required Issue Between 1 and 32: ");
+                    System.out.println("\nPopulation Reporting System");
+                    System.out.println("---------------------------");
+                    System.out.println("Enter a requirement number between 1 and 32.");
+                    System.out.println("Enter 0 to exit.");
+                    System.out.print("Selection: ");
+
                     try {
                         requirement = Integer.parseInt(scanner.nextLine().trim());
-                        if (requirement < 1 || requirement > 32) {
-                            System.out.println("Please Enter Valid Value Between 1 and 32.");
-                        }
                     } catch (NumberFormatException e) {
-                        System.out.println("Invalid input. Please enter a valid number.");
-                        requirement = 0; // keeps loop running
+                        System.out.println("Invalid input. Please enter a number.");
+                        continue;
                     }
-                } while (requirement < 1 || requirement > 32);
 
-            // Switch Based On Requirement
-                switch (requirement) {
-                    case 1:
-                        Requirement1 req1 = new Requirement1(con);
-                        List<Country> countries = req1.getAllCountriesWorld();
-                        req1.printCountries(countries);
-                        break;
+                    if (requirement == 0) {
+                        System.out.println("Exiting Population Reporting System.");
+                        running = false;
+                        continue;
+                    }
 
-                    case 2:
-                        List<String> continents =
-                                Arrays.asList("Asia", "Europe", "North America", "Africa", "Oceania", "Antarctica", "South America");
-                        String continent;
+                    if (requirement < 1 || requirement > 32) {
+                        System.out.println("Please enter a valid value between 1 and 32.");
+                        continue;
+                    }
 
-                        while (true) {
-                            System.out.println("Enter continent: ");
-                            continent = scanner.nextLine().trim();
-                            String finalC = continent;
-                            continent = continents.stream().filter(c -> c.equalsIgnoreCase(finalC)).findFirst().orElse(null);
+                    // Switch Based On Requirement
+                    switch (requirement) {
+                        case 1:
+                            Requirement1 req1 = new Requirement1(con);
+                            List<Country> countries = req1.getAllCountriesWorld();
+                            req1.printCountries(countries);
+                            break;
 
-                            if (continent != null) break;
-                            System.out.println("Invalid continent. Try again.\n");
-                        }
+                        case 2:
+                            List<String> continents =
+                                    Arrays.asList("Asia", "Europe", "North America", "Africa", "Oceania", "Antarctica", "South America");
+                            String continent;
 
-                        Requirement2 req2 = new Requirement2(con);
-                        req2.printCountries(req2.getCountriesInContinent(continent));
-                        break;
+                            while (true) {
+                                System.out.println("Enter continent: ");
+                                continent = scanner.nextLine().trim();
+                                String finalC = continent;
+                                continent = continents.stream().filter(c -> c.equalsIgnoreCase(finalC)).findFirst().orElse(null);
+
+                                if (continent != null) break;
+                                System.out.println("Invalid continent. Try again.\n");
+                            }
+
+                            Requirement2 req2 = new Requirement2(con);
+                            req2.printCountries(req2.getCountriesInContinent(continent));
+                            break;
+                        default:
+                            System.out.println("Requirement " + requirement + " has not been implemented yet.");
+                            break;
+
+                    }
                 }
-
-
                 // The connection closes automatically when leaving this block.
                 return;
+
             } catch (SQLException e) {
                 System.out.println("Database attempt failed: " + e.getMessage());
 
