@@ -15,13 +15,12 @@ The aim of the project is to develop a population reporting system using Java, M
 Product Owner: 
 George Freeman 
 ----
-Scrum Master: 
-TBC
+Scrum Master:
+Rohan Phillips
 ----
 Team members:
 Brian Alexander, 
-Rhys John Paterson, 
-Rohan Phillips, 
+Rhys John Paterson,  
 Nekoro Spencer, 
 Angela Lynn Wandera, 
 ---
