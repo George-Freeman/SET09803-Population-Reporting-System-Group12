@@ -6,7 +6,6 @@
 ![Release](https://img.shields.io/github/v/release/George-Freeman/SET09803-Population-Reporting-System-Group12)
 ![Develop build](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml/badge.svg?branch=develop)
 
-
 ## About
 The aim of the project is to develop a population reporting system using Java, Maven, MySQL and Docker. The system will use the MySQL World database to produce population reports for countries, cities, and capital cities.
 
