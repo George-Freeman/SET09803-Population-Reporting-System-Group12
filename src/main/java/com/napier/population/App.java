@@ -1,7 +1,7 @@
 package com.napier.population;
 
 
-//Importa all Reports and models.
+//Imports all Reports and models.
 import com.napier.population.models.*;
 import com.napier.population.reports.*;
 
