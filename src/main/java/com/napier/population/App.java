@@ -1,11 +1,11 @@
 package com.napier.population;
 
-import com.napier.population.models.Country;
-import com.napier.population.reports.Requirement1;
-import com.napier.population.reports.Requirement2;
-import com.napier.population.reports.Requirement3;
-import com.napier.population.reports.Requirement4;
 
+//Importa all Reports and models.
+import com.napier.population.models.*;
+import com.napier.population.reports.*;
+
+//Other imports.
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -14,6 +14,7 @@ import java.sql.Statement;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+
 
 public class App {
     public static void main(String[] args) throws InterruptedException {
@@ -36,6 +37,10 @@ public class App {
                                 "Number of countries: " + results.getInt(1));
                     }
                 }
+
+                // Variable Declaration For Variables Used In More Than One Requirement;
+                List<Country> regionCountries;
+                String region;
 
                 // Add In Number Input For Selecting Requirement.
                 Scanner scanner = new Scanner(System.in);
@@ -96,9 +101,9 @@ public class App {
 
                         case 3:
                             System.out.print("Enter region: ");
-                            String region = scanner.nextLine().trim();
+                            region = scanner.nextLine().trim();
                             Requirement3 req3 = new Requirement3(con);
-                            List<Country> regionCountries = req3.getCountriesByRegion(region);
+                            regionCountries = req3.getCountriesByRegion(region);
                             if (regionCountries.isEmpty()) {
                                 System.out.println("No countries found for region: " + region);
                             } else {
@@ -124,6 +129,33 @@ public class App {
                             Requirement4 req4 = new Requirement4(con);
                             List<Country> topCountries = req4.getTopNCountriesWorld(n);
                             req4.printCountries(topCountries);
+                            break;
+
+                        case 6:
+                            System.out.println("Please enter a region (e.g. Caribbean, Western Europe, Middle East): ");
+                            region = scanner.nextLine().trim();
+                            while (region.isEmpty()) {
+                                System.out.println("Region cannot be empty. Please enter a region: ");
+                                region = scanner.nextLine().trim();
+                            }
+
+                            int n6 = 0;
+                            while (n6 <= 0) {
+                                System.out.println("Enter the number of top populated countries to display (N > 0): ");
+                                try {
+                                    n6 = Integer.parseInt(scanner.nextLine().trim());
+                                    if (n6 <= 0) {
+                                        System.out.println("N must be greater than 0. Try again.\n");
+                                    }
+                                } catch (NumberFormatException e) {
+                                    System.out.println("Invalid number. Try again.\n");
+                                }
+                            }
+
+                            Requirement6 req6 = new Requirement6(con);
+
+                            regionCountries = req6.getTopNCountriesRegion(region, n6);
+                            req6.printCountries(regionCountries);
                             break;
 
                         default:
