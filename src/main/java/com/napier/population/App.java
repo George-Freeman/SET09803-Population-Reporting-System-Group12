@@ -157,7 +157,11 @@ public class App {
                             regionCountries = req6.getTopNCountriesRegion(region, n6);
                             req6.printCountries(regionCountries);
                             break;
-
+                        case 7:
+                            Requirement7 req7 = new Requirement7(con);
+                            List<City> cities = req7.getAllCitiesWorld();
+                            req7.printCities(cities);
+                            break;
                         default:
                             System.out.println("Requirement " + requirement + " has not been implemented yet.");
                             break;
