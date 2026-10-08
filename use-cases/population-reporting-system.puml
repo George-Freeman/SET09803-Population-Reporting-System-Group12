@@ -1,0 +1,139 @@
+@startuml
+left to right direction
+
+actor "Organisation User" as User
+
+rectangle "Population Reporting System" {
+    package "Country Reports" {
+        usecase "UC1: All countries worldwide" as UC1
+        usecase "UC2: Countries by continent" as UC2
+        usecase "UC3: Countries by region" as UC3
+        usecase "UC4: Top N countries worldwide" as UC4
+        usecase "UC5: Top N countries by continent" as UC5
+        usecase "UC6: Top N countries by region" as UC6
+    }
+
+    package "City Reports" {
+        usecase "UC7: All cities worldwide" as UC7
+        usecase "UC8: Cities by continent" as UC8
+        usecase "UC9: Cities by region" as UC9
+        usecase "UC10: Cities by country" as UC10
+        usecase "UC11: Cities by district" as UC11
+        usecase "UC12: Top N cities worldwide" as UC12
+        usecase "UC13: Top N cities by continent" as UC13
+        usecase "UC14: Top N cities by region" as UC14
+        usecase "UC15: Top N cities by country" as UC15
+        usecase "UC16: Top N cities by district" as UC16
+    }
+
+    package "Capital City Reports" {
+        usecase "UC17: All capitals worldwide" as UC17
+        usecase "UC18: Capitals by continent" as UC18
+        usecase "UC19: Capitals by region" as UC19
+        usecase "UC20: Top N capitals worldwide" as UC20
+        usecase "UC21: Top N capitals by continent" as UC21
+        usecase "UC22: Top N capitals by region" as UC22
+    }
+
+    package "Population Breakdown Reports" {
+        usecase "UC23: Population breakdown\nby continent" as UC23
+        usecase "UC24: Population breakdown\nby region" as UC24
+        usecase "UC25: Population breakdown\nby country" as UC25
+    }
+
+    package "Population Totals" {
+        usecase "UC26: World population" as UC26
+        usecase "UC27: Continent population" as UC27
+        usecase "UC28: Region population" as UC28
+        usecase "UC29: Country population" as UC29
+        usecase "UC30: District population" as UC30
+        usecase "UC31: City population" as UC31
+    }
+
+    package "Language Report" {
+        usecase "UC32: Language populations\nand world percentages" as UC32
+    }
+}
+
+rectangle "World Database" as DB
+
+User -- UC1
+User -- UC2
+User -- UC3
+User -- UC4
+User -- UC5
+User -- UC6
+User -- UC7
+User -- UC8
+User -- UC9
+User -- UC10
+User -- UC11
+User -- UC12
+User -- UC13
+User -- UC14
+User -- UC15
+User -- UC16
+User -- UC17
+User -- UC18
+User -- UC19
+User -- UC20
+User -- UC21
+User -- UC22
+User -- UC23
+User -- UC24
+User -- UC25
+User -- UC26
+User -- UC27
+User -- UC28
+User -- UC29
+User -- UC30
+User -- UC31
+User -- UC32
+
+UC1 -- DB
+UC2 -- DB
+UC3 -- DB
+UC4 -- DB
+UC5 -- DB
+UC6 -- DB
+UC7 -- DB
+UC8 -- DB
+UC9 -- DB
+UC10 -- DB
+UC11 -- DB
+UC12 -- DB
+UC13 -- DB
+UC14 -- DB
+UC15 -- DB
+UC16 -- DB
+UC17 -- DB
+UC18 -- DB
+UC19 -- DB
+UC20 -- DB
+UC21 -- DB
+UC22 -- DB
+UC23 -- DB
+UC24 -- DB
+UC25 -- DB
+UC26 -- DB
+UC27 -- DB
+UC28 -- DB
+UC29 -- DB
+UC30 -- DB
+UC31 -- DB
+UC32 -- DB
+
+legend bottom
+All country, city, and capital reports:
+population ordered from largest to smallest.
+N is supplied by the user.
+
+Population breakdown:
+total, living in recorded cities, and outside
+recorded cities, including percentages.
+
+Language report:
+Chinese, English, Hindi, Spanish, and Arabic.
+endlegend
+
+@enduml
