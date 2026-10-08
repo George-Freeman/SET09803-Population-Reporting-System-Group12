@@ -130,7 +130,56 @@ public class App {
                             List<Country> topCountries = req4.getTopNCountriesWorld(n);
                             req4.printCountries(topCountries);
                             break;
+                        case 5: {
+                            List<String> validContinents = Arrays.asList(
+                                    "Asia", "Europe", "North America",
+                                    "Africa", "Oceania", "Antarctica",
+                                    "South America");
 
+                            String selectedContinent = null;
+
+                            while (selectedContinent == null) {
+                                System.out.println(
+                                        "Enter continent (e.g. Asia, Europe, Africa):");
+                                String inputContinent = scanner.nextLine().trim();
+
+                                for (String validContinent : validContinents) {
+                                    if (validContinent.equalsIgnoreCase(inputContinent)) {
+                                        selectedContinent = validContinent;
+                                        break;
+                                    }
+                                }
+
+                                if (selectedContinent == null) {
+                                    System.out.println("Invalid continent. Try again.");
+                                }
+                            }
+
+                            int numberOfCountries = 0;
+
+                            while (numberOfCountries <= 0) {
+                                System.out.println(
+                                        "Enter the number of countries to display (N > 0):");
+
+                                try {
+                                    numberOfCountries =
+                                            Integer.parseInt(scanner.nextLine().trim());
+
+                                    if (numberOfCountries <= 0) {
+                                        System.out.println("N must be greater than 0.");
+                                    }
+                                } catch (NumberFormatException e) {
+                                    System.out.println("Invalid number. Try again.");
+                                }
+                            }
+
+                            Requirement5 req5 = new Requirement5(con);
+                            List<Country> continentCountries =
+                                    req5.getTopNCountriesByContinent(
+                                            selectedContinent, numberOfCountries);
+                            req5.printCountries(continentCountries);
+                            break;
+                        }
                         case 6:
                             System.out.println("Please enter a region (e.g. Caribbean, Western Europe, Middle East): ");
                             region = scanner.nextLine().trim();
