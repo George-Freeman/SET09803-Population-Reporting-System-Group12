@@ -49,7 +49,7 @@ This is a planning draft for team review, related to #74. It does not record a c
 
 Rohan Phillips is preparing the documentation as Scrum Master. The four named members supplied estimates; this does not confirm meeting attendance.
 
-Nekoro's score for #38 was updated from 8 to 5 at Rohan's request. All other submitted scores are unchanged. Final estimates remain pending team agreement; no average or agreed sprint total has been recorded.
+Nekoro's score for #38 was updated from 8 to 5 at Rohan's request. The scale used for the sprint poker 1-5. All other submitted scores are unchanged. Final estimates remain pending team agreement; no average or agreed sprint total has been recorded.
 
 Before finalising this document, confirm:
 - Planning meeting date and attendees.
