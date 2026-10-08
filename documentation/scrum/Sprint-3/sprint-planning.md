@@ -42,14 +42,14 @@ Individual submissions from George Freeman, Rohan Phillips, Nekoro Spencer and R
 | #32 | Generate top N capital cities in the world | 3 | 3 | 5 | 3 | Pending |
 | #36 | Generate top N capital cities by continent | 3 | 4 | 5 | 3 | Pending |
 | #37 | Generate top N capital cities by region | 3 | 4 | 5 | 3 | Pending |
-| #38 | Generate population report by continent | 4 | 5 | 8 | 5 | Pending |
+| #38 | Generate population report by continent | 4 | 5 | 5 | 5 | Pending |
 
 ## Notes
 This is a planning draft for team review, related to #74. It does not record a completed planning meeting.
 
 Rohan Phillips is preparing the documentation as Scrum Master. The four named members supplied estimates; this does not confirm meeting attendance.
 
-Rohan used a 1-5 difficulty scale, while Nekoro's submission includes 8. Original votes have been preserved. The team needs to agree on a common scale and final estimates; no average or agreed sprint total has been recorded.
+Nekoro's score for #38 was updated from 8 to 5 at Rohan's request. All other submitted scores are unchanged. Final estimates remain pending team agreement; no average or agreed sprint total has been recorded.
 
 Before finalising this document, confirm:
 - Planning meeting date and attendees.
