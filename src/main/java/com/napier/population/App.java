@@ -237,6 +237,14 @@ public class App {
                             List<City> continentCities = req8.getCitiesInContinent(continent);
                             req8.printCities(continentCities);
                             break;
+                        case 9:
+                            System.out.println("Enter region (e.g. Caribbean, Western Europe, Middle East): ");
+                            region = scanner.nextLine().trim();
+
+                            Requirement9 req9 = new Requirement9(con);
+                            List<City> regionCities = req9.getCitiesInRegion(region);
+                            req9.printCities(regionCities);
+                            break;
                         
                          case 20: {
                             int numberOfCapitalCities = 0;
