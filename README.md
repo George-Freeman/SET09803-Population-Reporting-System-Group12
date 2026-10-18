@@ -44,7 +44,7 @@ Angela Lynn Wandera,
 | 6 | The top N populated countries in a region where N is provided by the user. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/82e5417e-3f76-4a7c-81d3-037fe1393700" /> |
 | 7 | All the cities in the world organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/ff7c5801-7682-441e-a11c-88a6eba9c7fb" /> |
 | 8 | All the cities in a continent organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/ffdf1052-b7af-4f9a-8599-95ee9960085c" /> |
-| 9 | All the cities in a region organised by largest population to smallest. | No | |
+| 9 | All the cities in a region organised by largest population to smallest. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/41dd3fda-18d3-4212-a4fa-41c8eaeebbd3" /> |
 | 10 | All the cities in a country organised by largest population to smallest. | No | |
 | 11 | All the cities in a district organised by largest population to smallest. | No | |
 | 12 | The top N populated cities in the world where N is provided by the user. | No | |
@@ -55,7 +55,7 @@ Angela Lynn Wandera,
 | 17 | All the capital cities in the world organised by largest population to smallest. | No | |
 | 18 | All the capital cities in a continent organised by largest population to smallest. | No | |
 | 19 | All the capital cities in a region organised by largest to smallest. | No | |
-| 20 | The top N populated capital cities in the world where N is provided by the user. | No | |
+| 20 | The top N populated capital cities in the world where N is provided by the user. | Yes | <img width="300" alt="image" src="https://github.com/user-attachments/assets/90dffac6-5f6f-429c-9589-a79502887f85" /> |
 | 21 | The top N populated capital cities in a continent where N is provided by the user. | No | |
 | 22 | The top N populated capital cities in a region where N is provided by the user. | No | |
 | 23 | The population of people, people living in cities, and people not living in cities in each continent. | No | |
