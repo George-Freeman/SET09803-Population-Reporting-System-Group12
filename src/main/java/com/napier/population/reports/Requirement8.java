@@ -8,6 +8,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Requirement 8: All the cities in a continent organised by largest population to smallest.
+ *
+ * Provides methods to query the world database for cities located in a given continent
+ * ordered in descending order of population, and to display the formatted results.
+ */
 public class Requirement8 {
     private final Connection con;
 
@@ -16,10 +22,10 @@ public class Requirement8 {
     }
 
     /**
-     * Requirement 8: All the cities in a continent organised by largest population to smallest.
+     * Retrieves all cities in a specified continent ordered by population descending.
      *
      * @param continent The name of the continent (e.g., "Europe", "Asia").
-     * @return List of City objects matching existing City model fields.
+     * @return List of City objects.
      */
     public List<City> getCitiesInContinent(String continent) {
         List<City> cities = new ArrayList<>();
@@ -41,10 +47,10 @@ public class Requirement8 {
             try (ResultSet rset = pstmt.executeQuery()) {
                 while (rset.next()) {
                     City city = new City();
-                    city.name = rset.getString("Name");
-                    city.country = rset.getString("Country");
-                    city.district = rset.getString("District");
-                    city.population = rset.getInt("Population");
+                    city.setName(rset.getString("Name"));
+                    city.setCountry(rset.getString("Country"));
+                    city.setDistrict(rset.getString("District"));
+                    city.setPopulation(rset.getInt("Population"));
 
                     cities.add(city);
                 }
@@ -58,6 +64,8 @@ public class Requirement8 {
 
     /**
      * Prints an aligned table of city records.
+     *
+     * @param cities List of cities to print.
      */
     public void printCities(List<City> cities) {
         if (cities == null || cities.isEmpty()) {
@@ -71,7 +79,7 @@ public class Requirement8 {
 
         for (City city : cities) {
             System.out.printf("%-35s | %-35s | %-25s | %,12d%n",
-                    city.name, city.country, city.district, city.population);
+                    city.getName(), city.getCountry(), city.getDistrict(), city.getPopulation());
         }
         System.out.println("---------------------------------------------------------------------------------------------------------");
     }
