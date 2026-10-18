@@ -211,6 +211,35 @@ public class App {
                             List<City> cities = req7.getAllCitiesWorld();
                             req7.printCities(cities);
                             break;
+                        case 20: {
+                            int numberOfCapitalCities = 0;
+
+                            while (numberOfCapitalCities <= 0) {
+                                System.out.println(
+                                        "Enter the number of capital cities to display (N > 0):"
+                                );
+
+                                try {
+                                    numberOfCapitalCities =
+                                            Integer.parseInt(scanner.nextLine().trim());
+
+                                    if (numberOfCapitalCities <= 0) {
+                                        System.out.println("N must be greater than 0.");
+                                    }
+                                } catch (NumberFormatException exception) {
+                                    System.out.println("Invalid number. Try again.");
+                                }
+                            }
+
+                            Requirement20 requirement20 = new Requirement20(con);
+                            List<CapitalCity> capitalCities =
+                                    requirement20.getTopCapitalCitiesWorld(
+                                            numberOfCapitalCities
+                                    );
+
+                            requirement20.printCapitalCities(capitalCities);
+                            break;
+                        }
                         default:
                             System.out.println("Requirement " + requirement + " has not been implemented yet.");
                             break;
