@@ -20,6 +20,10 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         String url = "jdbc:mysql://db:3306/world?sslMode=REQUIRED";
 
+        // Initial delay allowing MySQL container to initialize before the first connection attempt
+        System.out.println("Waiting 10 seconds for database service to initialize...");
+        Thread.sleep(10000);
+
         // Retry while the database starts and imports its data.
         for (int attempt = 1; attempt <= 10; attempt++) {
             System.out.println("Connecting to database... attempt " + attempt);
@@ -41,6 +45,9 @@ public class App {
                 // Variable Declaration For Variables Used In More Than One Requirement;
                 List<Country> regionCountries;
                 String region;
+                List<String> continents =
+                        Arrays.asList("Asia", "Europe", "North America", "Africa", "Oceania", "Antarctica", "South America");
+                String continent;
 
                 // Add In Number Input For Selecting Requirement.
                 Scanner scanner = new Scanner(System.in);
@@ -81,9 +88,7 @@ public class App {
                             break;
 
                         case 2:
-                            List<String> continents =
-                                    Arrays.asList("Asia", "Europe", "North America", "Africa", "Oceania", "Antarctica", "South America");
-                            String continent;
+
 
                             while (true) {
                                 System.out.println("Enter continent: ");
@@ -211,7 +216,29 @@ public class App {
                             List<City> cities = req7.getAllCitiesWorld();
                             req7.printCities(cities);
                             break;
-                        case 20: {
+                       
+                        case 8:
+                            while (true) {
+                                System.out.println("Enter continent (e.g. Asia, Europe, North America, Africa, Oceania, Antarctica, South America): ");
+                                continent = scanner.nextLine().trim();
+                                String targetContinent = continent;
+                                continent = continents.stream()
+                                        .filter(c -> c.equalsIgnoreCase(targetContinent))
+                                        .findFirst()
+                                        .orElse(null);
+
+                                if (continent != null) {
+                                    break;
+                                }
+                                System.out.println("Invalid continent entered. Please try again.\n");
+                            }
+
+                            Requirement8 req8 = new Requirement8(con);
+                            List<City> continentCities = req8.getCitiesInContinent(continent);
+                            req8.printCities(continentCities);
+                            break;
+                        
+                         case 20: {
                             int numberOfCapitalCities = 0;
 
                             while (numberOfCapitalCities <= 0) {
@@ -240,6 +267,7 @@ public class App {
                             requirement20.printCapitalCities(capitalCities);
                             break;
                         }
+
                         default:
                             System.out.println("Requirement " + requirement + " has not been implemented yet.");
                             break;

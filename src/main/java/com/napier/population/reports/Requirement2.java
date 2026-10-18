@@ -41,16 +41,14 @@ public class Requirement2 {
             try (ResultSet rset = pstmt.executeQuery()) {
                 while (rset.next()) {
                     Country country = new Country();
-                    country.code = rset.getString("Code");
-                    country.name = rset.getString("Name");
-                    country.continent = rset.getString("Continent");
-                    country.region = rset.getString("Region");
-                    country.population = rset.getInt("Population");
-                    country.capital = rset.getString("Capital");
+                    country.setCode(rset.getString("Code"));
+                    country.setName(rset.getString("Name"));
+                    country.setContinent(rset.getString("Continent"));
+                    country.setRegion(rset.getString("Region"));
+                    country.setPopulation(rset.getInt("Population"));
 
-                    if (country.capital == null) {
-                        country.capital = "N/A";
-                    }
+                    String capital = rset.getString("Capital");
+                    country.setCapital(capital == null ? "N/A" : capital);
 
                     countries.add(country);
                 }
@@ -78,7 +76,7 @@ public class Requirement2 {
 
         for (Country c : countries) {
             System.out.printf("%-5s | %-45s | %-15s | %-25s | %,12d | %-20s%n",
-                    c.code, c.name, c.continent, c.region, c.population, c.capital);
+                    c.getCode(), c.getName(), c.getContinent(), c.getRegion(), c.getPopulation(), c.getCapital());
         }
         System.out.println("--------------------------------------------------------------------------------------------------------------------------");
     }
