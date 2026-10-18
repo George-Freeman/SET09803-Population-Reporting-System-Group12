@@ -43,7 +43,7 @@ Angela Lynn Wandera,
 | 5 | The top N populated countries in a continent where N is provided by the user. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/2e3b962d-21ac-4f7b-b7c8-9514030e2cca" /> |
 | 6 | The top N populated countries in a region where N is provided by the user. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/82e5417e-3f76-4a7c-81d3-037fe1393700" /> |
 | 7 | All the cities in the world organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/ff7c5801-7682-441e-a11c-88a6eba9c7fb" /> |
-| 8 | All the cities in a continent organised by largest population to smallest. | No | |
+| 8 | All the cities in a continent organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/ffdf1052-b7af-4f9a-8599-95ee9960085c" /> |
 | 9 | All the cities in a region organised by largest population to smallest. | No | |
 | 10 | All the cities in a country organised by largest population to smallest. | No | |
 | 11 | All the cities in a district organised by largest population to smallest. | No | |
