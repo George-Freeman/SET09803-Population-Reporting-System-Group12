@@ -255,6 +255,26 @@ public class App {
                             }
                             break;
 
+                        case 10: {
+                        String country10 = "";
+                        while (country10.isEmpty()) {
+                            System.out.println("Enter country (e.g. Japan, Brazil, United Kingdom): ");
+                            country10 = scanner.nextLine().trim();
+                            if (country10.isEmpty()) {
+                                System.out.println("Country cannot be empty. Try again.\n");
+                            }
+                        }
+
+                        Requirement10 req10 = new Requirement10(con);
+                        List<City> cities10 = req10.getCitiesInCountry(country10);
+                        if (cities10.isEmpty()) {
+                            System.out.println("No cities found for country: " + country10);
+                        } else {
+                            req10.printCities(cities10);
+                        }
+                        break;
+                        }
+
                          case 20: {
                             int numberOfCapitalCities = 0;
 
