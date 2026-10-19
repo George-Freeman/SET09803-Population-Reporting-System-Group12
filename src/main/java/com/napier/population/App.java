@@ -414,6 +414,39 @@ public class App {
                         break;
                         }
 
+                        case 16: {
+                        String district16 = "";
+                        while (district16.isEmpty()) {
+                            System.out.println("Enter district (e.g. Texas, England, Tokyo-to): ");
+                            district16 = scanner.nextLine().trim();
+                            if (district16.isEmpty()) {
+                                System.out.println("District cannot be empty. Try again.\n");
+                            }
+                        }
+
+                        int n16 = 0;
+                        while (n16 <= 0) {
+                            System.out.println("Enter the number of top populated cities to display (N > 0): ");
+                            try {
+                                n16 = Integer.parseInt(scanner.nextLine().trim());
+                                if (n16 <= 0) {
+                                    System.out.println("N must be greater than 0. Try again.\n");
+                                }
+                            } catch (NumberFormatException e) {
+                                System.out.println("Invalid number. Try again.\n");
+                            }
+                        }
+
+                        Requirement16 req16 = new Requirement16(con);
+                        List<City> cities16 = req16.getTopNCitiesInDistrict(district16, n16);
+                        if (cities16.isEmpty()) {
+                            System.out.println("No cities found for district: " + district16);
+                        } else {
+                            req16.printCities(cities16);
+                        }
+                        break;
+                        }
+
                          case 20: {
                             int numberOfCapitalCities = 0;
 
