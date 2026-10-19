@@ -381,6 +381,39 @@ public class App {
                         break;
                         }
 
+                        case 15: {
+                        String country15 = "";
+                        while (country15.isEmpty()) {
+                            System.out.println("Enter country (e.g. Japan, Brazil, United Kingdom): ");
+                            country15 = scanner.nextLine().trim();
+                            if (country15.isEmpty()) {
+                                System.out.println("Country cannot be empty. Try again.\n");
+                            }
+                        }
+
+                        int n15 = 0;
+                        while (n15 <= 0) {
+                            System.out.println("Enter the number of top populated cities to display (N > 0): ");
+                            try {
+                                n15 = Integer.parseInt(scanner.nextLine().trim());
+                                if (n15 <= 0) {
+                                    System.out.println("N must be greater than 0. Try again.\n");
+                                }
+                            } catch (NumberFormatException e) {
+                                System.out.println("Invalid number. Try again.\n");
+                            }
+                        }
+
+                        Requirement15 req15 = new Requirement15(con);
+                        List<City> cities15 = req15.getTopNCitiesInCountry(country15, n15);
+                        if (cities15.isEmpty()) {
+                            System.out.println("No cities found for country: " + country15);
+                        } else {
+                            req15.printCities(cities15);
+                        }
+                        break;
+                        }
+
                          case 20: {
                             int numberOfCapitalCities = 0;
 
