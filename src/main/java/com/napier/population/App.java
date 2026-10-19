@@ -275,6 +275,26 @@ public class App {
                         break;
                         }
 
+                        case 11: {
+                        String district11 = "";
+                        while (district11.isEmpty()) {
+                            System.out.println("Enter district (e.g. Texas, England, Tokyo-to): ");
+                            district11 = scanner.nextLine().trim();
+                            if (district11.isEmpty()) {
+                                System.out.println("District cannot be empty. Try again.\n");
+                            }
+                        }
+
+                        Requirement11 req11 = new Requirement11(con);
+                        List<City> cities11 = req11.getCitiesInDistrict(district11);
+                        if (cities11.isEmpty()) {
+                            System.out.println("No cities found for district: " + district11);
+                        } else {
+                            req11.printCities(cities11);
+                        }
+                        break;
+                        }
+
                          case 20: {
                             int numberOfCapitalCities = 0;
 
