@@ -11,19 +11,12 @@
 ## Sprint Goal
 Proposed goal, pending team agreement: Expand city and capital-city reporting, and add population reporting by continent.
 
-## Sprint 2 Issues Carried over
-Pending team review of incomplete Sprint 2 work. No carry-over items have been agreed for this draft.
-
-| Issue | Description |
-|-------|-------------|
-| Pending | Confirm any incomplete work to carry into Sprint 3 |
-
 ## Product Backlog Items Added to the Sprint Backlog
 The following six items are proposed for Sprint 3 based on the issues in George's planning poker submission. Final selection is pending team agreement.
 
 | Issue | Description | Owner |
 |-------|-------------|-------|
-| #30 | Generate city report by continent | Pending |
+| #30 | Generate city report by continent |Rhys Paterson|
 | #31 | Generate capital city report by region | Rhys Paterson |
 | #32 | Generate top N capital cities in the world | Rohan Phillips |
 | #36 | Generate top N capital cities by continent | Pending |
@@ -36,11 +29,10 @@ The proposed backlog supports the sprint goal through city, capital-city and con
 Sprint 3 starts on 18 October 2026. The sprint end date, remaining task owners and each member's available capacity are pending team confirmation. The team will confirm a realistic workload before finalising the sprint backlog.
 
 Confirmed assignments:
+- Rhys Paterson: #30 - Generate city report by continent.
 - Rhys Paterson: #31 - Generate capital city report by region.
 - Rohan Phillips: #32 - Generate top N capital cities in the world.
 - Rohan Phillips: #38 - Generate population report by continent.
-
-Development work will use GitHub issues, feature branches, pull requests and CI before being merged into develop.
 
 ## Planning Poker
 Individual submissions from George Freeman, Rohan Phillips, Nekoro Spencer and Rhys Paterson are recorded below. Rhys's requirement numbers were matched to GitHub issues by their descriptions.
@@ -65,8 +57,5 @@ Before finalising this document, confirm:
 - Planning meeting attendees.
 - Sprint end date.
 - Sprint goal and the six proposed backlog items.
-- Any unfinished Sprint 2 work to carry over.
-- Owners for #30, #36 and #37, plus each member's realistic capacity.
 - Common estimation scale and final points.
 
-Board updates will follow the confirmed team decisions.
