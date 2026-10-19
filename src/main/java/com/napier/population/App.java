@@ -295,6 +295,26 @@ public class App {
                         break;
                         }
 
+                        case 12: {
+                        int n12 = 0;
+                        while (n12 <= 0) {
+                            System.out.println("Enter the number of top populated cities to display (N > 0): ");
+                            try {
+                                n12 = Integer.parseInt(scanner.nextLine().trim());
+                                if (n12 <= 0) {
+                                    System.out.println("N must be greater than 0. Try again.\n");
+                                }
+                            } catch (NumberFormatException e) {
+                                System.out.println("Invalid number. Try again.\n");
+                            }
+                        }
+
+                        Requirement12 req12 = new Requirement12(con);
+                        List<City> cities12 = req12.getTopNCitiesWorld(n12);
+                        req12.printCities(cities12);
+                        break;
+                        }
+
                          case 20: {
                             int numberOfCapitalCities = 0;
 
