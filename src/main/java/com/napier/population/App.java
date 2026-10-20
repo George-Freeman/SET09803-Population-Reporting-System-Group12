@@ -267,7 +267,18 @@ public class App {
                             requirement20.printCapitalCities(capitalCities);
                             break;
                         }
+                        case 23: {
+                            Requirement23 requirement23 =
+                                    new Requirement23(con);
 
+                            List<PopulationReport> populationReports =
+                                    requirement23.getPopulationByContinent();
+
+                            requirement23.printPopulationReports(
+                                    populationReports
+                            );
+                            break;
+                        }
                         default:
                             System.out.println("Requirement " + requirement + " has not been implemented yet.");
                             break;
