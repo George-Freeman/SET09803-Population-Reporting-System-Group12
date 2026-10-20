@@ -17,7 +17,7 @@ The following six items are proposed for Sprint 3 based on the issues in George'
 | Issue | Description | Owner |
 |-------|-------------|-------|
 | #30 | Generate city report by continent |Rhys Paterson|
-| #31 | Generate capital city report by region | Rhys Paterson |
+| #31 | Generate capital city report by region | Angela Lynn Wandera |
 | #32 | Generate top N capital cities in the world | Rohan Phillips |
 | #36 | Generate top N capital cities by continent | Pending |
 | #37 | Generate top N capital cities by region | Pending |
@@ -30,7 +30,7 @@ Sprint 3 starts on 18 October 2026. The sprint end date, remaining task owners a
 
 Confirmed assignments:
 - Rhys Paterson: #30 - Generate city report by continent.
-- Rhys Paterson: #31 - Generate capital city report by region.
+- Angela Lynn Wandera: #31 - Generate capital city report by region.
 - Rohan Phillips: #32 - Generate top N capital cities in the world.
 - Rohan Phillips: #38 - Generate population report by continent.
 
