@@ -268,6 +268,47 @@ public class App {
                             break;
                         }
 
+                        case 21: {
+                            String continent21 = "";
+                            while (continent21.isEmpty()) {
+                                System.out.println(
+                                        "Enter continent (e.g. Asia, Europe, North America, Africa, Oceania, Antarctica, South America):");
+                                continent21 = scanner.nextLine().trim();
+                                if (continent21.isEmpty()) {
+                                    System.out.println("Continent cannot be empty. Try again.");
+                                }
+                            }
+
+                            int numberOfCapitalCities21 = 0;
+                            while (numberOfCapitalCities21 <= 0) {
+                                System.out.println(
+                                        "Enter the number of capital cities to display (N > 0):");
+
+                                try {
+                                    numberOfCapitalCities21 =
+                                            Integer.parseInt(scanner.nextLine().trim());
+
+                                    if (numberOfCapitalCities21 <= 0) {
+                                        System.out.println("N must be greater than 0.");
+                                    }
+                                } catch (NumberFormatException exception) {
+                                    System.out.println("Invalid number. Try again.");
+                                }
+                            }
+
+                            Requirement21 requirement21 = new Requirement21(con);
+                            List<CapitalCity> capitalCities21 =
+                                    requirement21.getTopCapitalCitiesContinent(
+                                            continent21, numberOfCapitalCities21);
+
+                            if (capitalCities21.isEmpty()) {
+                                System.out.println("No capital cities found for continent: " + continent21);
+                            } else {
+                                requirement21.printCapitalCities(capitalCities21);
+                            }
+                            break;
+                        }
+
                         default:
                             System.out.println("Requirement " + requirement + " has not been implemented yet.");
                             break;
