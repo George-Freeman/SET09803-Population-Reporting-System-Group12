@@ -476,6 +476,44 @@ public class App {
                             requirement20.printCapitalCities(capitalCities);
                             break;
                         }
+                        case 21:
+                            List<String> continents21 = Arrays.asList("Asia", "Europe", "North America", "Africa", "Oceania", "Antarctica", "South America");
+                            String continent21;
+
+                            //ask user for a valid continent.
+                            while (true) {
+                                System.out.println("Enter continent: ");
+                                //removes accidental spaces in input
+                                continent21 = scanner.nextLine().trim();
+
+                                String finalContinent = continent21;
+                                //look through the valid continents and find one that matches what was inputted by user
+                                continent21 = continents21.stream().filter(c -> c.equalsIgnoreCase (finalContinent)).findFirst().orElse(null);
+
+                                if (continent21 != null) {
+                                    break;
+                                }
+                                System.out.println("Invalid continent. Try again \n");
+                            }
+
+                            int n21 = 0;
+                            while (n21<= 0) {
+                                System.out.println("Enter the number of top populated capital cities to display (N > 0):");
+                                try {
+                                    n21 = Integer.parseInt(scanner.nextLine().trim());
+                                    if (n21 <= 0) {
+                                        System.out.println("N must be greater than 0. Try again \n");
+                                    }
+                                } catch (NumberFormatException e) {
+                                    System.out.println("Invalid number. Try again \n");
+                                }
+                            }
+
+                            Requirement21 req21 = new Requirement21(con);
+                            List<CapitalCity> capitalCities = req21.getTopNCapitalCitiesByContinent(continent21, n21);
+                            req21.printCapitalCities(capitalCities);
+                            break;
+
                         case 23: {
                             Requirement23 requirement23 =
                                     new Requirement23(con);
