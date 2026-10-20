@@ -238,6 +238,23 @@ public class App {
                             req8.printCities(continentCities);
                             break;
                         
+                        case 9:
+                            System.out.println("Enter region (e.g. Caribbean, Western Europe, Middle East): ");
+                            region = scanner.nextLine().trim();
+                            while (region.isEmpty()) {
+                                System.out.println("Region cannot be empty. Please enter a region: ");
+                                region = scanner.nextLine().trim();
+                            }
+
+                            Requirement9 req9 = new Requirement9(con);
+                            List<City> regionCities = req9.getCitiesInRegion(region);
+                            if (regionCities.isEmpty()) {
+                                System.out.println("No cities found for region: " + region);
+                            } else {
+                                req9.printCities(regionCities);
+                            }
+                            break;
+
                          case 20: {
                             int numberOfCapitalCities = 0;
 
