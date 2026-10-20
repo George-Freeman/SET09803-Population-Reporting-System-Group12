@@ -41,12 +41,12 @@ Individual submissions from George Freeman, Rohan Phillips, Nekoro Spencer and R
 
 | Issue | Description | George | Rohan | Nekoro | Rhys | Estimated Cost |
 |-------|-------------|-------:|------:|-------:|-----:|---------------:|
-| #30 | Generate city report by continent | 2 | 3 | 5 | 3 | Pending |
-| #31 | Generate capital city report by region | 2 | 3 | 5 | 3 | Pending |
-| #32 | Generate top N capital cities in the world | 3 | 3 | 5 | 3 | Pending |
-| #36 | Generate top N capital cities by continent | 3 | 4 | 5 | 3 | Pending |
-| #37 | Generate top N capital cities by region | 3 | 4 | 5 | 3 | Pending |
-| #38 | Generate population report by continent | 4 | 5 | 5 | 5 | Pending |
+| #30 | Generate city report by continent | 2 | 3 | 5 | 3 | 3.25 |
+| #31 | Generate capital city report by region | 2 | 3 | 5 | 3 | 3.25 |
+| #32 | Generate top N capital cities in the world | 3 | 3 | 5 | 3 | 3.50 |
+| #36 | Generate top N capital cities by continent | 3 | 4 | 5 | 3 | 3.75 |
+| #37 | Generate top N capital cities by region | 3 | 4 | 5 | 3 | 3.75 |
+| #38 | Generate population report by continent | 4 | 5 | 5 | 5 | 4.75 |
 
 ## Notes
 This remains a planning draft for team review, related to #74.
