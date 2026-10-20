@@ -60,7 +60,7 @@ Angela Lynn Wandera,
 | 20 | The top N populated capital cities in the world where N is provided by the user. | Yes | <img width="300" alt="image" src="https://github.com/user-attachments/assets/90dffac6-5f6f-429c-9589-a79502887f85" />|
 | 21 | The top N populated capital cities in a continent where N is provided by the user. | No | |
 | 22 | The top N populated capital cities in a region where N is provided by the user. | No | |
-| 23 | The population of people, people living in cities, and people not living in cities in each continent. | No | |
+| 23 | The population of people, people living in cities, and people not living in cities in each continent. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/495fd585-a1bc-47a4-9dc9-256ded449ea1" /> |
 | 24 | The population of people, people living in cities, and people not living in cities in each region. | No | |
 | 25 | The population of people, people living in cities, and people not living in cities in each country. | No | |
 | 26 | The population of the world. | No | |
