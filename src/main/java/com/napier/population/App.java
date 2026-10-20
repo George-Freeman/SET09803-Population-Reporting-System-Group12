@@ -315,6 +315,39 @@ public class App {
                         break;
                         }
 
+                        case 13: {
+                        String continent13 = "";
+                        while (continent13.isEmpty()) {
+                            System.out.println("Enter continent (e.g. Asia, Europe, North America, Africa, Oceania, Antarctica, South America): ");
+                            continent13 = scanner.nextLine().trim();
+                            if (continent13.isEmpty()) {
+                                System.out.println("Continent cannot be empty. Try again.\n");
+                            }
+                        }
+
+                        int n13 = 0;
+                        while (n13 <= 0) {
+                            System.out.println("Enter the number of top populated cities to display (N > 0): ");
+                            try {
+                                n13 = Integer.parseInt(scanner.nextLine().trim());
+                                if (n13 <= 0) {
+                                    System.out.println("N must be greater than 0. Try again.\n");
+                                }
+                            } catch (NumberFormatException e) {
+                                System.out.println("Invalid number. Try again.\n");
+                            }
+                        }
+
+                        Requirement13 req13 = new Requirement13(con);
+                        List<City> cities13 = req13.getTopNCitiesInContinent(continent13, n13);
+                        if (cities13.isEmpty()) {
+                            System.out.println("No cities found for continent: " + continent13);
+                        } else {
+                            req13.printCities(cities13);
+                        }
+                        break;
+                        }
+
                          case 20: {
                             int numberOfCapitalCities = 0;
 
