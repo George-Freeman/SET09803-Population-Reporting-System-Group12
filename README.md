@@ -44,21 +44,23 @@ Angela Lynn Wandera,
 | 6 | The top N populated countries in a region where N is provided by the user. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/82e5417e-3f76-4a7c-81d3-037fe1393700" /> |
 | 7 | All the cities in the world organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/ff7c5801-7682-441e-a11c-88a6eba9c7fb" /> |
 | 8 | All the cities in a continent organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/ffdf1052-b7af-4f9a-8599-95ee9960085c" /> |
-| 9 | All the cities in a region organised by largest population to smallest. | No | |
-| 10 | All the cities in a country organised by largest population to smallest. | No | |
-| 11 | All the cities in a district organised by largest population to smallest. | No | |
-| 12 | The top N populated cities in the world where N is provided by the user. | No | |
-| 13 | The top N populated cities in a continent where N is provided by the user. | No | |
-| 14 | The top N populated cities in a region where N is provided by the user. | No | |
-| 15 | The top N populated cities in a country where N is provided by the user. | No | |
-| 16 | The top N populated cities in a district where N is provided by the user. | No | |
+| 9 | All the cities in a region organised by largest population to smallest. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/4a8816d3-e061-4b1c-81cf-1f92a8a22290" /> |
+| 10 | All the cities in a country organised by largest population to smallest. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/752218f7-e7f5-4699-b252-82551630c8b8" />
+|
+| 11 | All the cities in a district organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/014f0282-bfc3-4fe9-82c1-6b1406502503" /> |
+| 12 | The top N populated cities in the world where N is provided by the user. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/9bbcb9da-49ab-4cf0-a946-6689b835cc58" /> |
+| 13 | The top N populated cities in a continent where N is provided by the user. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/f6281bd8-c5a3-4c9a-bab2-8f4e7df91547" />
+|
+| 14 | The top N populated cities in a region where N is provided by the user. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/232d10d3-0ec1-431c-ab93-4a109eba3a2b" />|
+| 15 | The top N populated cities in a country where N is provided by the user. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/5840bc62-63f3-4024-86de-724b74510a40" />|
+| 16 | The top N populated cities in a district where N is provided by the user. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/acac6851-6e23-4c97-8a41-da0113e9d5cc" /> |
 | 17 | All the capital cities in the world organised by largest population to smallest. | No | |
 | 18 | All the capital cities in a continent organised by largest population to smallest. | No | |
 | 19 | All the capital cities in a region organised by largest to smallest. | No | |
-| 20 | The top N populated capital cities in the world where N is provided by the user. | No | |
+| 20 | The top N populated capital cities in the world where N is provided by the user. | Yes | <img width="300" alt="image" src="https://github.com/user-attachments/assets/90dffac6-5f6f-429c-9589-a79502887f85" />|
 | 21 | The top N populated capital cities in a continent where N is provided by the user. | No | |
 | 22 | The top N populated capital cities in a region where N is provided by the user. | No | |
-| 23 | The population of people, people living in cities, and people not living in cities in each continent. | No | |
+| 23 | The population of people, people living in cities, and people not living in cities in each continent. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/495fd585-a1bc-47a4-9dc9-256ded449ea1" /> |
 | 24 | The population of people, people living in cities, and people not living in cities in each region. | No | |
 | 25 | The population of people, people living in cities, and people not living in cities in each country. | No | |
 | 26 | The population of the world. | No | |
