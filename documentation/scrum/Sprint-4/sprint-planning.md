@@ -47,11 +47,11 @@ Enter each team member's submitted score below. Discuss differences and record t
 
 | Issue | Description | George | Rohan | Nekoro | Rhys | Angela | Estimated Cost |
 |-------|-------------|-------:|------:|-------:|-----:|-------:|---------------:|
-| #39 | Generate population report by region | 3 | 5 | 2 | Pending | Pending | Pending |
-| #40 | Generate population report by country | 3 | 4 | 3 | Pending | Pending | Pending |
-| #41 | Get world population | 2 | 1 | 2 | Pending | Pending | Pending |
-| #42 | Get continent population | 2 | 2 | 2 | Pending | Pending | Pending |
-| #43 | Get region population | 2 | 2 | 2 | Pending | Pending | Pending |
+| #39 | Generate population report by region | 3 | 5 | 2 | 5 | Pending | Pending |
+| #40 | Generate population report by country | 3 | 4 | 3 | 5 | Pending | Pending |
+| #41 | Get world population | 2 | 1 | 2 | 1 | Pending | Pending |
+| #42 | Get continent population | 2 | 2 | 2 | 2 | Pending | Pending |
+| #43 | Get region population | 2 | 2 | 2 | 1 | Pending | Pending |
 
 ## Notes
 This remains a Sprint 4 planning draft for team review.
