@@ -9,14 +9,14 @@
 **Sprint end date:** Pending team confirmation
 
 ## Sprint Goal
-Proposed goal, pending team agreement: Add population reports and totals for regions, countries, the world and continents.
+Proposed goal: Add population reports and totals for regions, countries, the world and continents.
 
 ## Sprint 3 Issues Carried over
-No carry-over items have been identified because the Sprint 3 backlog was completed. Confirm this with the team before finalising the document.
+No carry-over items have been identified because the Sprint 3 backlog was completed.
 
 | Issue | Description |
 |-------|-------------|
-| None currently | Confirm that all Sprint 3 work was reviewed, merged and completed |
+| None currently | All Sprint 3 work was reviewed, merged and completed |
 
 ## Product Backlog Items Added to the Sprint Backlog
 The following five items have been selected for Sprint 4. Some owners are confirmed, while the remaining owners and team capacity are pending.
@@ -58,11 +58,10 @@ This remains a Sprint 4 planning draft for team review.
 
 Rohan Phillips is preparing the documentation as Scrum Master. Planning-poker votes from George, Rohan, Nekoro, Rhys and Angela, along with meeting attendance and task ownership, will be added as the team confirms them.
 
-Before finalising this document, confirm:
+Before this document is finalised, confirm:
 - Planning meeting attendees.
 - Sprint end date.
 - Sprint goal.
-- That no Sprint 3 work needs to be carried over.
 - Owners for issues #39 to #43.
 - Each team member's available capacity.
 - Every planning-poker vote and the final agreed estimates.
