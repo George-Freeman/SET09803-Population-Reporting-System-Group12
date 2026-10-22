@@ -40,8 +40,6 @@ Confirmed assignments:
 - #41: George Freeman.
 - #42 and #43: Pending team confirmation.
 
-Development work will use GitHub issues, feature branches, pull requests and CI before being merged into develop.
-
 ## Planning Poker
 Enter each team member's submitted score below. Discuss differences and record the team's final agreed story-point estimate in the Estimated Cost column.
 
@@ -61,9 +59,7 @@ Rohan Phillips is preparing the documentation as Scrum Master. Planning-poker vo
 Before this document is finalised, confirm:
 - Planning meeting attendees.
 - Sprint end date.
-- Sprint goal.
-- Owners for issues #39 to #43.
-- Each team member's available capacity.
+- Owners for issues #42 & #43.
 - Every planning-poker vote and the final agreed estimates.
 
 Board updates will follow the confirmed team decisions.
