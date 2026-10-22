@@ -1,7 +1,6 @@
-package com.napier.population;
+package com.napier.population.reports;
 
 import com.napier.population.models.City;
-import com.napier.population.reports.Requirement8;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
