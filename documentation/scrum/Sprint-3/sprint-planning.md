@@ -2,11 +2,11 @@
 
 **Date:** 18 October 2026
 
-**Attendees:** Pending meeting confirmation
+**Attendees:** Rhys Paterson, George Freeman, Rohan Phillips, Angela Lynn Wandera, Nekoro Spencer
 
 **Sprint start date:** 18 October 2026
 
-**Sprint end date:** Pending team confirmation
+**Sprint end date:** 22 October 2026
 
 ## Sprint Goal
 Proposed goal, pending team agreement: Expand city and capital-city reporting, and add population reporting by continent.
