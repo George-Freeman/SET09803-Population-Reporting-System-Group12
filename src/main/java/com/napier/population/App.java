@@ -561,6 +561,54 @@ public class App {
                     req21.printCapitalCities(capitalCities21);
                     break;
                 }
+                case 22: {
+
+                    String region22 = "";
+
+                    while (region22.isEmpty()) {
+                        System.out.println("Enter region (e.g. Caribbean, Western Europe, Middle East):");
+
+                        region22 = scanner.nextLine().trim();
+
+                        if (region22.isEmpty()) {
+                            System.out.println("Region cannot be empty. Try again.");
+
+                        }
+
+                    }
+
+                    int numberOfCapitalCities22 = 0;
+
+                    while (numberOfCapitalCities22 <= 0) {
+                        System.out.println("Enter the number of capital cities to display (N > 0):");
+
+                        try {
+                            numberOfCapitalCities22 = Integer.parseInt(scanner.nextLine().trim());
+
+                            if (numberOfCapitalCities22 <= 0) {
+                                System.out.println("N must be greater than 0.");
+
+                            }
+
+                        } catch (NumberFormatException exception) {
+                            System.out.println("Invalid number. Try again.");
+
+                        }
+
+                    }
+
+                    Requirement22 requirement22 = new Requirement22(con);
+                    List<CapitalCity> capitalCities22 = requirement22.getTopCapitalCitiesRegion(region22, numberOfCapitalCities22);
+
+                    if (capitalCities22.isEmpty()) {
+                        System.out.println("No capital cities found for region: " + region22);
+
+                    } else {
+                        requirement22.printCapitalCities(capitalCities22);
+                    }
+
+                    break;
+                }
 
                 case 23: {
                     Requirement23 requirement23 = new Requirement23(con);
