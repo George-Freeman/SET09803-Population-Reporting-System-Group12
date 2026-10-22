@@ -27,7 +27,7 @@ The following five items have been selected for Sprint 4. Some owners are confir
 | #40 | Generate population report by country | Rohan Phillips |
 | #41 | Get world population | George Freeman |
 | #42 | Get continent population | Pending |
-| #43 | Get region population | Pending |
+| #43 | Get region population | Nekoro Spencer |
 
 ## Sprint Backlog
 The Sprint 4 backlog focuses on population reports and population totals at different geographical levels.
