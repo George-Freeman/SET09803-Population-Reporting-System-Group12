@@ -45,12 +45,10 @@ Angela Lynn Wandera,
 | 7 | All the cities in the world organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/ff7c5801-7682-441e-a11c-88a6eba9c7fb" /> |
 | 8 | All the cities in a continent organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/ffdf1052-b7af-4f9a-8599-95ee9960085c" /> |
 | 9 | All the cities in a region organised by largest population to smallest. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/4a8816d3-e061-4b1c-81cf-1f92a8a22290" /> |
-| 10 | All the cities in a country organised by largest population to smallest. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/752218f7-e7f5-4699-b252-82551630c8b8" />
-|
+| 10 | All the cities in a country organised by largest population to smallest. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/752218f7-e7f5-4699-b252-82551630c8b8" /> |
 | 11 | All the cities in a district organised by largest population to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/014f0282-bfc3-4fe9-82c1-6b1406502503" /> |
 | 12 | The top N populated cities in the world where N is provided by the user. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/9bbcb9da-49ab-4cf0-a946-6689b835cc58" /> |
-| 13 | The top N populated cities in a continent where N is provided by the user. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/f6281bd8-c5a3-4c9a-bab2-8f4e7df91547" />
-|
+| 13 | The top N populated cities in a continent where N is provided by the user. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/f6281bd8-c5a3-4c9a-bab2-8f4e7df91547" />|
 | 14 | The top N populated cities in a region where N is provided by the user. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/232d10d3-0ec1-431c-ab93-4a109eba3a2b" />|
 | 15 | The top N populated cities in a country where N is provided by the user. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/5840bc62-63f3-4024-86de-724b74510a40" />|
 | 16 | The top N populated cities in a district where N is provided by the user. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/acac6851-6e23-4c97-8a41-da0113e9d5cc" /> |
