@@ -48,6 +48,18 @@ Individual submissions from George Freeman, Rohan Phillips, Nekoro Spencer and R
 | #37 | Generate top N capital cities by region | 3 | 4 | 5 | 3 | 3.75 |
 | #38 | Generate population report by continent | 4 | 5 | 5 | 5 | 4.75 |
 
+### Reasons for the Estimates
+These short reasons were added after Sprint 3 to record why the team considered some issues easier or harder than others.
+
+| Issue | Reason |
+|-------|--------|
+| #30 | This was considered a smaller task because it mainly needed the cities to be filtered by continent and sorted by population. |
+| #31 | This needed a region search and a link between countries and their capital cities, so the team considered it slightly more involved. |
+| #32 | This reused the capital-city report but also needed the user to enter a number and the system to return only the top results. |
+| #36 | This needed two user inputs: a continent and the number of results. Both inputs also needed to be checked before running the report. |
+| #37 | This was similar to #36, but it used regions. The team needed to make sure region names, the top-N value and the sorting all worked correctly. |
+| #38 | This was the most difficult item because it needed several totals and percentages for every continent, followed by checks to make sure the figures were correct. |
+
 ## Notes
 This remains a planning draft for team review, related to #74.
 
