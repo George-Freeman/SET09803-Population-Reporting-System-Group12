@@ -53,12 +53,12 @@ These short reasons were added after Sprint 3 to record why the team considered 
 
 | Issue | Reason |
 |-------|--------|
-| #30 | This was considered a smaller task because it mainly needed the cities to be filtered by continent and sorted by population. |
-| #31 | This needed a region search and a link between countries and their capital cities, so the team considered it slightly more involved. |
-| #32 | This reused the capital-city report but also needed the user to enter a number and the system to return only the top results. |
-| #36 | This needed two user inputs: a continent and the number of results. Both inputs also needed to be checked before running the report. |
-| #37 | This was similar to #36, but it used regions. The team needed to make sure region names, the top-N value and the sorting all worked correctly. |
-| #38 | This was the most difficult item because it needed several totals and percentages for every continent, followed by checks to make sure the figures were correct. |
+| #30 | This was considered a smaller task because it mainly needed the cities to be filtered by continent and sorted by population.
+| #31 | This needed a region search and a link between countries and their capital cities, so the team considered it slightly more involved.
+| #32 | This reused the capital-city report but also needed the user to enter a number and the system to return only the top results.
+| #36 | This needed two user inputs: a continent and the number of results. Both inputs also needed to be checked before running the report.
+| #37 | This was similar to #36, but it used regions. The team needed to make sure region names, the top-N value and the sorting all worked correctly.
+| #38 | This was the most difficult item because it needed several totals and percentages for every continent, followed by checks to make sure the figures were correct.
 
 ## Notes
 This remains a planning draft for team review, related to #74.
@@ -69,7 +69,5 @@ Nekoro's score for #38 was updated from 8 to 5 at Rohan's request. The scale use
 
 Before finalising this document, confirm:
 - Planning meeting attendees.
-- Sprint end date.
-- Sprint goal and the six proposed backlog items.
 - Common estimation scale and final points.
 
