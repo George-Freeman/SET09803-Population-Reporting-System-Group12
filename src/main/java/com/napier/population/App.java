@@ -624,6 +624,21 @@ public class App {
                     break;
                 }
 
+                case 28: {
+                    String region28 = "";
+                    while (region28.isEmpty()) {
+                        System.out.print("Enter region (e.g. Caribbean, Western Europe, North America): ");
+                        region28 = scanner.nextLine().trim();
+                        if (region28.isEmpty()) {
+                            System.out.println("Region cannot be empty. Try again.");
+                        }
+                    }
+
+                    Requirement28 requirement28 = new Requirement28(con);
+                    requirement28.printPopulation(region28);
+                    break;
+                }
+
                 default:
                     System.out.println("Requirement " + requirement + " has not been implemented yet.");
                     break;
