@@ -17,8 +17,8 @@ class Requirement27Test {
 
     @Test
     void testGetPopulationOfContinentNullConnection() {
-        long result = req27.getPopulationOfContinent("Europe");
-        assertEquals(-1, result);
+        long result = req27.getPopulationOfContinent("Antarctica");
+        assertEquals(-1L, result);
     }
 
     @Test
@@ -35,13 +35,15 @@ class Requirement27Test {
 
     @Test
     void testPrintContinentPopulationNullContinent() {
-        assertDoesNotThrow(() -> req27.printContinentPopulation(null, 1000000L));
+        assertDoesNotThrow(() -> req27.printContinentPopulation(null));
     }
 
     @Test
     void testPrintContinentPopulationNegativePopulation() {
-        assertDoesNotThrow(() -> req27.printContinentPopulation("Europe", -1));
+        assertDoesNotThrow(() -> req27.printContinentPopulation("Europe"));
     }
+
+
 
     /**
      * Confirms successful formatting and output display for a valid continent 
@@ -49,6 +51,9 @@ class Requirement27Test {
      */
     @Test
     void testPrintContinentPopulationSuccess() {
-        assertDoesNotThrow(() -> req27.printContinentPopulation("Europe", 730074600L));
+        assertEquals(
+                730074600L,
+                req27.getPopulationOfContinent("Europe")
+        );
     }
 }

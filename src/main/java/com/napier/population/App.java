@@ -643,8 +643,7 @@ public class App {
                     }
 
                     Requirement27 req27 = new Requirement27(con);
-                    long totalPop = req27.getPopulationOfContinent(selectedContinent27);
-                    req27.printContinentPopulation(selectedContinent27, totalPop);
+                    req27.printContinentPopulation(selectedContinent27);
                     break;
 
 
