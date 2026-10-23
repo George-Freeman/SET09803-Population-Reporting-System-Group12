@@ -52,6 +52,18 @@ Enter each team member's submitted score below. Discuss differences and record t
 | #42 | Get continent population | 2 | 2 | 2 | 2 | 2 |
 | #43 | Get region population | 2 | 2 | 2 | 1 | 1.75 |
 
+The estimated cost for each issue is the average of the four submitted votes. The Sprint 4 backlog has a total estimated cost of **12.75 points**.
+
+### Estimate Reasoning
+
+| Issue | Estimated Cost | Reason |
+|-------|---------------:|--------|
+| #39 | 3.75 | This report needs database totals, city population calculations, percentages, formatted output and tests for every region. |
+| #40 | 3.75 | This uses similar calculations for every country, produces many results and needs careful testing of totals and percentages. |
+| #41 | 1.5 | This only needs one database calculation to add the populations of all countries and display one result. |
+| #42 | 2 | This needs a continent input, one population query, input validation, formatted output and tests. |
+| #43 | 1.75 | This follows the same straightforward approach as the continent report but uses a selected region instead. |
+
 Rohan Phillips is preparing the documentation as Scrum Master. Planning-poker votes were submitted by George, Rohan, Nekoro and Rhys.
 
 Before this document is finalised, confirm:
