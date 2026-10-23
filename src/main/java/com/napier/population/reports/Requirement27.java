@@ -5,6 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Requirement 27: Generates a population report for a user-specified continent.
+ * <p>
+ * Queries the MySQL World database to calculate and format the total
+ * population across all countries located in a given continent.
+ * </p>
+ */
 public class Requirement27 {
 
     private final Connection con;
