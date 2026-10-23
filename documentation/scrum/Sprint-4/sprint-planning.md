@@ -65,7 +65,3 @@ The estimated cost for each issue is the average of the four submitted votes. Th
 | #43 | 1.75 | This follows the same straightforward approach as the continent report but uses a selected region instead. |
 
 Rohan Phillips is preparing the documentation as Scrum Master. Planning-poker votes were submitted by George, Rohan, Nekoro and Rhys.
-
-Before this document is finalised, confirm:
-- Sprint end date.
-
