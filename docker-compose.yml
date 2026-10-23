@@ -1,6 +1,7 @@
 services:
   app:
     build: .
+    command: ["db:3306", "10000"]
     depends_on:
       - db
 
@@ -8,6 +9,8 @@ services:
     build: ./db
     environment:
       MYSQL_ROOT_PASSWORD: example
+    ports:
+      - "33060:3306"
     volumes:
       - world-data:/var/lib/mysql
 
