@@ -488,10 +488,19 @@ public class App {
                             );
                             break;
                         }
+                            case 26:{
+                                Requirement26 requirement26 = new Requirement26(con);
+                                long worldPopulation = requirement26.getWorldPopulation();
+
+                                System.out.println();
+                                System.out.println("----------------------------------------");
+                                System.out.printf("World Population: %,d%n", worldPopulation);
+                                System.out.println("----------------------------------------");
+                                break;
+                        }
                         default:
                             System.out.println("Requirement " + requirement + " has not been implemented yet.");
                             break;
-
                     }
                 }
                 // The connection closes automatically when leaving this block.
