@@ -617,6 +617,13 @@ public class App {
                     break;
                 }
 
+                case 24: {
+                    Requirement24 requirement24 = new Requirement24(con);
+                    List<PopulationReport> populationReports = requirement24.getPopulationByRegion();
+                    requirement24.printPopulationReports(populationReports);
+                    break;
+                }
+
                 default:
                     System.out.println("Requirement " + requirement + " has not been implemented yet.");
                     break;
