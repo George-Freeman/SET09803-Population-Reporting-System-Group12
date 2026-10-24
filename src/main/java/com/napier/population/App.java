@@ -683,6 +683,21 @@ public class App {
                     break;
                 }
 
+                case 30: {
+                    String district30 = "";
+                    while (district30.isEmpty()) {
+                        System.out.println("Enter district (e.g. Texas, England, Tokyo-to): ");
+                        district30 = scanner.nextLine().trim();
+                        if (district30.isEmpty()) {
+                            System.out.println("District cannot be empty. Try again.");
+                        }
+                    }
+
+                    Requirement30 req30 = new Requirement30(con);
+                    req30.printDistrictPopulation(district30);
+                    break;
+                }
+
                 default:
                     System.out.println("Requirement " + requirement + " has not been implemented yet.");
                     break;
