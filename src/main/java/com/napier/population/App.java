@@ -617,6 +617,35 @@ public class App {
                     break;
                 }
 
+
+                case 27:
+                    List<String> validContinents27 = Arrays.asList(
+                            "Asia", "Europe", "North America",
+                            "Africa", "Oceania", "Antarctica",
+                            "South America");
+
+                    String selectedContinent27 = null;
+
+                    while (selectedContinent27 == null) {
+                        System.out.println("Enter continent (e.g. Asia, Europe, Africa, North America, South America, Oceania, Antarctica):");
+                        String input = scanner.nextLine().trim();
+
+                        for (String c : validContinents27) {
+                            if (c.equalsIgnoreCase(input)) {
+                                selectedContinent27 = c;
+                                break;
+                            }
+                        }
+
+                        if (selectedContinent27 == null) {
+                            System.out.println("Invalid continent. Try again.");
+                        }
+                    }
+
+                    Requirement27 req27 = new Requirement27(con);
+                    req27.printContinentPopulation(selectedContinent27);
+                    break;
+
                 case 24: {
                     Requirement24 requirement24 = new Requirement24(con);
                     List<PopulationReport> populationReports = requirement24.getPopulationByRegion();

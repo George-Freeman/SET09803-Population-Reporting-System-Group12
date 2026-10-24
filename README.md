@@ -56,14 +56,14 @@ Angela Lynn Wandera,
 | 18 | All the capital cities in a continent organised by largest population to smallest. | No | |
 | 19 | All the capital cities in a region organised by largest to smallest. | No | |
 | 20 | The top N populated capital cities in the world where N is provided by the user. | Yes | <img width="300" alt="image" src="https://github.com/user-attachments/assets/90dffac6-5f6f-429c-9589-a79502887f85" />|
-| 21 | The top N populated capital cities in a continent where N is provided by the user. | No | |
-| 22 | The top N populated capital cities in a region where N is provided by the user. | No | |
+| 21 | The top N populated capital cities in a continent where N is provided by the user. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/b2d520fb-51af-40b0-aa35-bddd88917104" /> |
+| 22 | The top N populated capital cities in a region where N is provided by the user. | Yes |<img width="300" alt="Screenshot 2026-10-22 at 12 12 17" src="https://github.com/user-attachments/assets/735db6eb-9098-4a7d-86d7-74f24d3bc18a" /> |
 | 23 | The population of people, people living in cities, and people not living in cities in each continent. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/495fd585-a1bc-47a4-9dc9-256ded449ea1" /> |
-| 24 | The population of people, people living in cities, and people not living in cities in each region. | No | |
-| 25 | The population of people, people living in cities, and people not living in cities in each country. | No | |
+| 24 | The population of people, people living in cities, and people not living in cities in each region. | Yes | <img width="300" alt="Screenshot 2026-10-22 at 10 35 59 AM" src="https://github.com/user-attachments/assets/41a4aeac-69dd-4aaf-b7d4-8a909ea7ac59" />|
+| 25 | The population of people, people living in cities, and people not living in cities in each country. | Yes |<img width="300" alt="issue-40-country-report-clean" src="https://github.com/user-attachments/assets/1ced695b-d23e-4c0b-b510-4565a6b09092" /> |
 | 26 | The population of the world. | No | |
-| 27 | The population of a continent. | No | |
-| 28 | The population of a region. | No | |
+| 27 | The population of a continent. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/db0ecc4f-8521-4096-81a5-3e25ea868123" /> |
+| 28 | The population of a region. | Yes | <img width="300" alt="Screenshot 2026-10-22 at 3 20 01 PM" src="https://github.com/user-attachments/assets/f02c62e9-3a26-40a8-bd6e-fe7059138d78" />|
 | 29 | The population of a country. | No | |
 | 30 | The population of a district. | No | |
 | 31 | The population of a city. | No | |
