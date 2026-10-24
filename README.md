@@ -61,7 +61,7 @@ Angela Lynn Wandera,
 | 23 | The population of people, people living in cities, and people not living in cities in each continent. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/495fd585-a1bc-47a4-9dc9-256ded449ea1" /> |
 | 24 | The population of people, people living in cities, and people not living in cities in each region. | No | |
 | 25 | The population of people, people living in cities, and people not living in cities in each country. | No | |
-| 26 | The population of the world. | No | |
+| 26 | The population of the world. | Yes | <img width="300" alt="image" src="https://github.com/user-attachments/assets/c56c2c9d-50e4-4ea2-889e-c18f229c53d6" />|
 | 27 | The population of a continent. | No | |
 | 28 | The population of a region. | No | |
 | 29 | The population of a country. | No | |
