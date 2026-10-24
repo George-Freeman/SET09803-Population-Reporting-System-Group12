@@ -37,16 +37,18 @@ Confirmed assignments:
 - Rohan Phillips: #38 - Generate population report by continent.
 
 ## Planning Poker
-Individual submissions from George Freeman, Rohan Phillips, Nekoro Spencer and Rhys Paterson are recorded below. Angela Lynn Wandera attended Sprint 3 and owned issues #31 and #37, but her planning-poker scores are still pending. Rhys's requirement numbers were matched to GitHub issues by their descriptions.
+Individual submissions from George Freeman, Rohan Phillips, Nekoro Spencer, Rhys Paterson and Angela Lynn Wandera are recorded below.
 
 | Issue | Description | George | Rohan | Nekoro | Rhys | Angela | Estimated Cost |
 |-------|-------------|-------:|------:|-------:|-----:|-------:|---------------:|
-| #30 | Generate city report by continent | 2 | 3 | 5 | 3 | Pending | 3.25 |
-| #31 | Generate capital city report by region | 2 | 3 | 5 | 3 | Pending | 3.25 |
-| #32 | Generate top N capital cities in the world | 3 | 3 | 5 | 3 | Pending | 3.50 |
-| #36 | Generate top N capital cities by continent | 3 | 4 | 5 | 3 | Pending | 3.75 |
-| #37 | Generate top N capital cities by region | 3 | 4 | 5 | 3 | Pending | 3.75 |
-| #38 | Generate population report by continent | 4 | 5 | 5 | 5 | Pending | 4.75 |
+| #30 | Generate city report by continent | 2 | 3 | 5 | 3 | 2 | 3.00 |
+| #31 | Generate capital city report by region | 2 | 3 | 5 | 3 | 3 | 3.20 |
+| #32 | Generate top N capital cities in the world | 3 | 3 | 5 | 3 | 3 | 3.40 |
+| #36 | Generate top N capital cities by continent | 3 | 4 | 5 | 3 | 4 | 3.80 |
+| #37 | Generate top N capital cities by region | 3 | 4 | 5 | 3 | 4 | 3.80 |
+| #38 | Generate population report by continent | 4 | 5 | 5 | 5 | 5 | 4.80 |
+
+**Sprint total:** 22.00 points
 
 ### Reasons for the Estimates
 These short reasons were added after Sprint 3 to record why the team considered some issues easier or harder than others.
@@ -61,5 +63,4 @@ These short reasons were added after Sprint 3 to record why the team considered 
 | #38 | This was the most difficult item because it needed several totals and percentages for every continent, followed by checks to make sure the figures were correct.
 
 ## Notes
-Nekoro's score for #38 was updated from 8 to 5 at Rohan's request. The scale used for the sprint poker is 1-5. All other submitted scores are unchanged. The displayed costs are provisional averages based on the four submitted votes. Final estimates and an agreed sprint total remain pending Angela's submission and team agreement.
-
+Nekoro's score for #38 was updated from 8 to 5 at Rohan's request. The scale used for the sprint poker is 1-5. All other submitted scores are unchanged. The displayed costs are averages based on all five submitted votes.
