@@ -59,6 +59,11 @@ Angela Lynn Wandera,
 | 21 | The top N populated capital cities in a continent where N is provided by the user. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/b2d520fb-51af-40b0-aa35-bddd88917104" /> |
 | 22 | The top N populated capital cities in a region where N is provided by the user. | Yes |<img width="300" alt="Screenshot 2026-10-22 at 12 12 17" src="https://github.com/user-attachments/assets/735db6eb-9098-4a7d-86d7-74f24d3bc18a" /> |
 | 23 | The population of people, people living in cities, and people not living in cities in each continent. | Yes |<img width="300" alt="image" src="https://github.com/user-attachments/assets/495fd585-a1bc-47a4-9dc9-256ded449ea1" /> |
+| 24 | The population of people, people living in cities, and people not living in cities in each region. | No | |
+| 25 | The population of people, people living in cities, and people not living in cities in each country. | No | |
+| 26 | The population of the world. | Yes | <img width="300" alt="image" src="https://github.com/user-attachments/assets/c56c2c9d-50e4-4ea2-889e-c18f229c53d6" />|
+| 27 | The population of a continent. | No | |
+| 28 | The population of a region. | No | |
 | 24 | The population of people, people living in cities, and people not living in cities in each region. | Yes | <img width="300" alt="Screenshot 2026-10-22 at 10 35 59 AM" src="https://github.com/user-attachments/assets/41a4aeac-69dd-4aaf-b7d4-8a909ea7ac59" />|
 | 25 | The population of people, people living in cities, and people not living in cities in each country. | Yes |<img width="300" alt="issue-40-country-report-clean" src="https://github.com/user-attachments/assets/1ced695b-d23e-4c0b-b510-4565a6b09092" /> |
 | 26 | The population of the world. | No | |
