@@ -67,7 +67,7 @@ Angela Lynn Wandera,
 | 29 | The population of a country. | No | |
 | 30 | The population of a district. | No | |
 | 31 | The population of a city. | No | |
-| 32 | The number of people who speak Chinese, English, Hindi, Spanish, and Arabic from greatest to smallest, including world population percentage. | No | |
+| 32 | The number of people who speak Chinese, English, Hindi, Spanish, and Arabic from greatest to smallest, including world population percentage. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/722ef515-5ea7-498e-8c20-487ea72375f2" /> |
 ---
 
 ## Building the Project 
