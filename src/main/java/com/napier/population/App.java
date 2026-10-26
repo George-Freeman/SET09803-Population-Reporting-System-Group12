@@ -616,6 +616,13 @@ public class App {
                     requirement23.printPopulationReports(populationReports);
                     break;
                 }
+                case 25: {
+                    Requirement25 requirement25 = new Requirement25(con);
+                    List<PopulationReport> populationReports25 =
+                            requirement25.getPopulationByCountry();
+                    requirement25.printPopulationReports(populationReports25);
+                    break;
+                }
 
 
                 case 27:
