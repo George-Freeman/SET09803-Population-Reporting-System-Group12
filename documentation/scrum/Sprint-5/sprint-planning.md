@@ -27,7 +27,7 @@ The following seven items have been selected for Sprint 5. Five owners are confi
 | #45 | Get district population | Angela Lynn Wandera |
 | #46 | Get city population | Angela Lynn Wandera |
 | #47 | Generate language population report | Rohan Phillips |
-| #98 | Improve unit test quality | To be assigned |
+| #98 | Improve unit test quality | Nekoro Spencer |
 | #100 | Make the database connection configurable | Rhys John Paterson |
 | #101 | Add integration tests | To be assigned |
 
@@ -39,14 +39,14 @@ Confirmed assignments:
 - #45: Angela Lynn Wandera.
 - #46: Angela Lynn Wandera.
 - #47: Rohan Phillips.
+-#98:  Nekoro Spencer.
 - #100: Rhys John Paterson.
 
 Assignments still to be confirmed:
-- #98: Improve unit test quality.
 - #101: Add integration tests.
 
 ### Backlog Correction
-Issue #99 was originally selected because it was still listed in the product backlog. A review of the `develop` branch confirmed that the model encapsulation work had already been completed and merged through PR #81 before Sprint 5 began. Issue #99 has therefore been removed from Sprint 5 and replaced with #101.
+Issue #99 was originally selected because it was still listed in the product backlog. A review of the develop branch confirmed that the model encapsulation work had already been completed and merged through PR #81 before Sprint 5 began. Issue #99 has therefore been removed from Sprint 5 and replaced with #101.
 
 ## Planning Poker
 Planning-poker votes will be added as they are received. After all five members have submitted their estimates, the team will discuss any large differences and record the agreed estimate in the Estimated Cost column.
