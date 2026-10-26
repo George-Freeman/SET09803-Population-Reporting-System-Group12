@@ -707,6 +707,26 @@ public class App {
                     break;
                 }
 
+                case 31: {
+                    String city31 = "";
+                    while (city31.isEmpty()) {
+                        System.out.println("Enter city (e.g. Tokyo, Valencia, Springfield): ");
+                        city31 = scanner.nextLine().trim();
+                        if (city31.isEmpty()) {
+                            System.out.println("City cannot be empty. Try again.");
+                        }
+                    }
+
+                    Requirement31 req31 = new Requirement31(con);
+                    List<City> cities31 = req31.getCitiesByName(city31);
+                    if (cities31.isEmpty()) {
+                        System.out.println("No cities found named: " + city31);
+                    } else {
+                        req31.printCityPopulation(cities31);
+                    }
+                    break;
+                }
+
                 default:
                     System.out.println("Requirement " + requirement + " has not been implemented yet.");
                     break;
