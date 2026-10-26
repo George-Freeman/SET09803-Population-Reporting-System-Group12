@@ -20,6 +20,9 @@ public class Requirement1 {
      */
     public List<Country> getAllCountriesWorld() {
         List<Country> countries = new ArrayList<>();
+        if (con == null) {
+            return countries;
+        }
         String sql = "SELECT c.Code, c.Name, c.Continent, c.Region, c.Population, ci.Name AS Capital "
                 + "FROM country c "
                 + "LEFT JOIN city ci ON c.Capital = ci.ID "
