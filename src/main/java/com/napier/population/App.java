@@ -726,6 +726,15 @@ public class App {
                     }
                     break;
                 }
+                case 32: {
+                    Requirement32 requirement32 = new Requirement32(con);
+
+                    List<LanguageReport> languageReports =
+                            requirement32.getLanguagePopulationReport();
+
+                    requirement32.printLanguagePopulationReport(languageReports);
+                    break;
+                }
 
                 default:
                     System.out.println("Requirement " + requirement + " has not been implemented yet.");
