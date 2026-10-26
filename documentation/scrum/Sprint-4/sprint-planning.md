@@ -6,7 +6,7 @@
 
 **Sprint start date:** 22 October 2026
 
-**Sprint end date:** Pending team confirmation
+**Sprint end date:** 26 October 2026
 
 ## Sprint Goal
 Proposed goal: Add population reports and totals for regions, countries, the world and continents.
