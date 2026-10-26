@@ -677,6 +677,21 @@ public class App {
                     break;
                 }
 
+                case 29: {
+                    String country29 = "";
+                    while (country29.isEmpty()) {
+                        System.out.println("Enter country (e.g. Japan, Brazil, United Kingdom): ");
+                        country29 = scanner.nextLine().trim();
+                        if (country29.isEmpty()) {
+                            System.out.println("Country cannot be empty. Try again.");
+                        }
+                    }
+
+                    Requirement29 req29 = new Requirement29(con);
+                    req29.printCountryPopulation(country29);
+                    break;
+                }
+
                 default:
                     System.out.println("Requirement " + requirement + " has not been implemented yet.");
                     break;
