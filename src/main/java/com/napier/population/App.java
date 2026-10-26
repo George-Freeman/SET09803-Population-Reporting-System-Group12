@@ -676,6 +676,56 @@ public class App {
                     requirement28.printPopulation(region28);
                     break;
                 }
+
+                case 29: {
+                    String country29 = "";
+                    while (country29.isEmpty()) {
+                        System.out.println("Enter country (e.g. Japan, Brazil, United Kingdom): ");
+                        country29 = scanner.nextLine().trim();
+                        if (country29.isEmpty()) {
+                            System.out.println("Country cannot be empty. Try again.");
+                        }
+                    }
+
+                    Requirement29 req29 = new Requirement29(con);
+                    req29.printCountryPopulation(country29);
+                    break;
+                }
+
+                case 30: {
+                    String district30 = "";
+                    while (district30.isEmpty()) {
+                        System.out.println("Enter district (e.g. Texas, England, Tokyo-to): ");
+                        district30 = scanner.nextLine().trim();
+                        if (district30.isEmpty()) {
+                            System.out.println("District cannot be empty. Try again.");
+                        }
+                    }
+
+                    Requirement30 req30 = new Requirement30(con);
+                    req30.printDistrictPopulation(district30);
+                    break;
+                }
+
+                case 31: {
+                    String city31 = "";
+                    while (city31.isEmpty()) {
+                        System.out.println("Enter city (e.g. Tokyo, Valencia, Springfield): ");
+                        city31 = scanner.nextLine().trim();
+                        if (city31.isEmpty()) {
+                            System.out.println("City cannot be empty. Try again.");
+                        }
+                    }
+
+                    Requirement31 req31 = new Requirement31(con);
+                    List<City> cities31 = req31.getCitiesByName(city31);
+                    if (cities31.isEmpty()) {
+                        System.out.println("No cities found named: " + city31);
+                    } else {
+                        req31.printCityPopulation(cities31);
+                    }
+                    break;
+                }
                 case 32: {
                     Requirement32 requirement32 = new Requirement32(con);
 
@@ -685,6 +735,7 @@ public class App {
                     requirement32.printLanguagePopulationReport(languageReports);
                     break;
                 }
+
                 default:
                     System.out.println("Requirement " + requirement + " has not been implemented yet.");
                     break;
