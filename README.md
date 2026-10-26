@@ -64,9 +64,9 @@ Angela Lynn Wandera,
 | 26 | The population of the world. | Yes | <img width="300" alt="image" src="https://github.com/user-attachments/assets/c56c2c9d-50e4-4ea2-889e-c18f229c53d6" />|
 | 27 | The population of a continent. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/db0ecc4f-8521-4096-81a5-3e25ea868123" /> |
 | 28 | The population of a region. | Yes | <img width="300" alt="Screenshot 2026-10-22 at 3 20 01 PM" src="https://github.com/user-attachments/assets/f02c62e9-3a26-40a8-bd6e-fe7059138d78" />|
-| 29 | The population of a country. | No | |
-| 30 | The population of a district. | No | |
-| 31 | The population of a city. | No | |
+| 29 | The population of a country. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/79e33781-831a-4280-be40-6936b9480175" /> |
+| 30 | The population of a district. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/bfe4e7a9-dede-4e8f-a99d-caad05008051" /> |
+| 31 | The population of a city. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/abfbd198-5ebd-4938-8503-1ee46dc40b23" />|
 | 32 | The number of people who speak Chinese, English, Hindi, Spanish, and Arabic from greatest to smallest, including world population percentage. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/722ef515-5ea7-498e-8c20-487ea72375f2" /> |
 ---
 
