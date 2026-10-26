@@ -9,7 +9,7 @@
 **Sprint end date:** Pending team confirmation
 
 ## Sprint Goal
-Complete the remaining population reports and improve the application's unit tests, model encapsulation and database configuration.
+Complete the remaining population reports and improve the application's unit tests, integration testing and database configuration.
 
 ## Sprint 4 Issues Carried Over
 No carry-over items have been identified because the Sprint 4 backlog was completed.
@@ -28,11 +28,11 @@ The following seven items have been selected for Sprint 5. Five owners are confi
 | #46 | Get city population | Angela Lynn Wandera |
 | #47 | Generate language population report | Rohan Phillips |
 | #98 | Improve unit test quality | To be assigned |
-| #99 | Improve model class encapsulation | To be assigned |
 | #100 | Make the database connection configurable | Rhys John Paterson |
+| #101 | Add integration tests | To be assigned |
 
 ## Sprint Backlog
-The Sprint 5 backlog combines the remaining population requirements with technical improvements to unit-test quality, model encapsulation and configurable database connections.
+The Sprint 5 backlog combines the remaining population requirements with technical improvements to unit-test quality, integration testing and configurable database connections.
 
 Confirmed assignments:
 - #44: Angela Lynn Wandera.
@@ -43,20 +43,23 @@ Confirmed assignments:
 
 Assignments still to be confirmed:
 - #98: Improve unit test quality.
-- #99: Improve model class encapsulation.
+- #101: Add integration tests.
+
+### Backlog Correction
+Issue #99 was originally selected because it was still listed in the product backlog. A review of the `develop` branch confirmed that the model encapsulation work had already been completed and merged through PR #81 before Sprint 5 began. Issue #99 has therefore been removed from Sprint 5 and replaced with #101.
 
 ## Planning Poker
 Planning-poker votes will be added as they are received. After all five members have submitted their estimates, the team will discuss any large differences and record the agreed estimate in the Estimated Cost column.
 
 | Issue | Description | George | Rhys | Nekoro | Angela | Rohan | Estimated Cost |
 |-------|-------------|-------:|-----:|-------:|-------:|------:|---------------:|
-| #44 | Get country population |  |  | 2 | 2 | 1 | Pending |
-| #45 | Get district population |  |  | 2 | 2 | 2 | Pending |
-| #46 | Get city population |  |  | 1 | 2 | 2 | Pending |
-| #47 | Generate language population report |  |  | 4 |  | 5 | Pending |
-| #98 | Improve unit test quality |  |  | 3 |  | 4 | Pending |
-| #99 | Improve model class encapsulation |  |  | 2 |  | 3 | Pending |
-| #100 | Make the database connection configurable |  |  |  |  | 4 | Pending |
+| #44 | Get country population |  | 1 | 2 | 2 | 1 | Pending |
+| #45 | Get district population |  | 2 | 2 | 2 | 2 | Pending |
+| #46 | Get city population |  | 1 | 1 | 2 | 2 | Pending |
+| #47 | Generate language population report |  | 4 | 4 |  | 5 | Pending |
+| #98 | Improve unit test quality |  | 3 | 3 |  | 4 | Pending |
+| #100 | Make the database connection configurable |  | 2 |  |  | 4 | Pending |
+| #101 | Add integration tests |  |  |  |  |  | Pending |
 
 ### Estimate Reasoning
 Reasons and final estimated costs will be recorded after all planning-poker votes are received and discussed.
@@ -68,7 +71,7 @@ Reasons and final estimated costs will be recorded after all planning-poker vote
 | #46 | Pending | Pending planning-poker discussion |
 | #47 | Pending | Pending planning-poker discussion |
 | #98 | Pending | Pending planning-poker discussion |
-| #99 | Pending | Pending planning-poker discussion |
 | #100 | Pending | Pending planning-poker discussion |
+| #101 | Pending | Pending planning-poker discussion |
 
 Rohan Phillips is preparing the documentation as Scrum Master. Remaining planning-poker results and task owners will be added when confirmed by the team.
