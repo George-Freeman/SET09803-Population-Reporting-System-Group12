@@ -29,7 +29,7 @@ The following seven items have been selected for Sprint 5. Five owners are confi
 | #47 | Generate language population report | Rohan Phillips |
 | #98 | Improve unit test quality | Nekoro Spencer |
 | #100 | Make the database connection configurable | Rhys John Paterson |
-| #101 | Add integration tests | To be assigned |
+| #101 | Add integration tests | George Freeman  |
 
 ## Sprint Backlog
 The Sprint 5 backlog combines the remaining population requirements with technical improvements to unit-test quality, integration testing and configurable database connections.
@@ -41,9 +41,7 @@ Confirmed assignments:
 - #47: Rohan Phillips.
 - #98: Nekoro Spencer.
 - #100: Rhys John Paterson.
-
-Assignments still to be confirmed:
-- #101: Add integration tests.
+- #101: George Freeman
 
 ### Backlog Correction
 Issue #99 was originally selected because it was still listed in the product backlog. A review of the develop branch confirmed that the model encapsulation work had already been completed and merged through PR #81 before Sprint 5 began. Issue #99 has therefore been removed from Sprint 5 and replaced with #101.
