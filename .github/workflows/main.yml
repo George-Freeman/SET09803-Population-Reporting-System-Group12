@@ -51,7 +51,7 @@ jobs:
         run: docker build -t database ./db
 
       - name: Start database
-        run: docker run --name world-db -d -p 33060:3306 database
+        run: docker run --name world-db -d -p 33060:3306 -e MYSQL_ROOT_PASSWORD=example database
 
       - name: Run Integration Tests
         run: mvn -Dtest=com.napier.population.AppIntegrationTest test
