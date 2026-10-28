@@ -51,13 +51,13 @@ All five members submitted their planning-poker scores. The Estimated Cost uses 
 
 | Issue | Description | George | Rhys | Nekoro | Angela | Rohan | Estimated Cost |
 |-------|-------------|-------:|-----:|-------:|-------:|------:|---------------:|
-| #44 | Get country population | 1 | 1 | 2 | 2 | 1 | 1 |
-| #45 | Get district population | 1 | 2 | 2 | 2 | 2 | 2 |
-| #46 | Get city population | 1 | 1 | 1 | 2 | 2 | 1 |
-| #47 | Generate language population report | 4 | 4 | 4 | 4 | 5 | 4 |
-| #98 | Improve unit test quality | 3 | 3 | 3 | 3 | 4 | 3 |
-| #100 | Make the database connection configurable | 2 | 2 | 3 | 3 | 4 | 3 |
-| #101 | Add integration tests | 4 | 3 | 4 | 4 | 4 | 4 |
+| #44 | Get country population | 1 | 1 | 2 | 2 | 1 | 1.2 |
+| #45 | Get district population | 1 | 2 | 2 | 2 | 2 | 1.8 |
+| #46 | Get city population | 1 | 1 | 1 | 2 | 2 | 1.4 |
+| #47 | Generate language population report | 4 | 4 | 4 | 4 | 5 | 4.2 |
+| #98 | Improve unit test quality | 3 | 3 | 3 | 3 | 4 | 3.2 |
+| #100 | Make the database connection configurable | 2 | 2 | 3 | 3 | 4 | 2.8 |
+| #101 | Add integration tests | 4 | 3 | 4 | 4 | 4 | 3.8 |
 
 **Total estimated cost:** 18 points.
 
