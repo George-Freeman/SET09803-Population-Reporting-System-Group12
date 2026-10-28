@@ -39,7 +39,7 @@ Confirmed assignments:
 - #45: Angela Lynn Wandera.
 - #46: Angela Lynn Wandera.
 - #47: Rohan Phillips.
--#98:  Nekoro Spencer.
+- #98: Nekoro Spencer.
 - #100: Rhys John Paterson.
 
 Assignments still to be confirmed:
@@ -49,29 +49,30 @@ Assignments still to be confirmed:
 Issue #99 was originally selected because it was still listed in the product backlog. A review of the develop branch confirmed that the model encapsulation work had already been completed and merged through PR #81 before Sprint 5 began. Issue #99 has therefore been removed from Sprint 5 and replaced with #101.
 
 ## Planning Poker
-Planning-poker votes will be added as they are received. After all five members have submitted their estimates, the team will discuss any large differences and record the agreed estimate in the Estimated Cost column.
+All five members submitted their planning-poker scores. The Estimated Cost uses the most common score. Where the votes were tied, the middle score was used.
 
 | Issue | Description | George | Rhys | Nekoro | Angela | Rohan | Estimated Cost |
 |-------|-------------|-------:|-----:|-------:|-------:|------:|---------------:|
-| #44 | Get country population |  | 1 | 2 | 2 | 1 | Pending |
-| #45 | Get district population |  | 2 | 2 | 2 | 2 | Pending |
-| #46 | Get city population |  | 1 | 1 | 2 | 2 | Pending |
-| #47 | Generate language population report |  | 4 | 4 |  | 5 | Pending |
-| #98 | Improve unit test quality |  | 3 | 3 |  | 4 | Pending |
-| #100 | Make the database connection configurable |  | 2 |  |  | 4 | Pending |
-| #101 | Add integration tests |  |  |  |  |  | Pending |
+| #44 | Get country population | 1 | 1 | 2 | 2 | 1 | 1 |
+| #45 | Get district population | 1 | 2 | 2 | 2 | 2 | 2 |
+| #46 | Get city population | 1 | 1 | 1 | 2 | 2 | 1 |
+| #47 | Generate language population report | 4 | 4 | 4 | 4 | 5 | 4 |
+| #98 | Improve unit test quality | 3 | 3 | 3 | 3 | 4 | 3 |
+| #100 | Make the database connection configurable | 2 | 2 | 3 | 3 | 4 | 3 |
+| #101 | Add integration tests | 4 | 3 | 4 | 4 | 4 | 4 |
+
+**Total estimated cost:** 18 points.
 
 ### Estimate Reasoning
-Reasons and final estimated costs will be recorded after all planning-poker votes are received and discussed.
 
 | Issue | Estimated Cost | Reason |
 |-------|---------------:|--------|
-| #44 | Pending | Pending planning-poker discussion |
-| #45 | Pending | Pending planning-poker discussion |
-| #46 | Pending | Pending planning-poker discussion |
-| #47 | Pending | Pending planning-poker discussion |
-| #98 | Pending | Pending planning-poker discussion |
-| #100 | Pending | Pending planning-poker discussion |
-| #101 | Pending | Pending planning-poker discussion |
+| #44 | 1 | A straightforward lookup for one selected country, with one input and one population value to return. |
+| #45 | 2 | The district population must be calculated by adding the populations of its cities, so it needs a little more query and validation work. |
+| #46 | 1 | A direct lookup for one selected city, with simple input checking and one value to display. |
+| #47 | 4 | It calculates totals and world percentages for five languages, orders the results and needs several calculations to be tested. |
+| #98 | 3 | The team must review the existing tests, find important gaps and add useful normal, null, empty and error cases. |
+| #100 | 3 | The connection code must be refactored so its location and delay work both locally and in Docker without breaking current behaviour. |
+| #101 | 4 | These tests must use the real Docker database, manage setup and connection details, and remain separate from the normal unit tests. |
 
-Rohan Phillips is preparing the documentation as Scrum Master. Remaining planning-poker results and task owners will be added when confirmed by the team.
+Rohan Phillips is preparing the documentation as Scrum Master. The remaining task owner will be added when confirmed by the team.
