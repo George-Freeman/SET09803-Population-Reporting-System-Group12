@@ -29,7 +29,7 @@ public class AppIntegrationTest {
 
     @BeforeAll
     static void init() {
-        App.connect("localhost:33060", 0);
+        App.connect("localhost:33060", 30000);
         con = App.getConnection();
 
         assertNotNull(con);
