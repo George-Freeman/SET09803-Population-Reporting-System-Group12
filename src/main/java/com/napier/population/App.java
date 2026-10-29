@@ -80,6 +80,15 @@ public class App {
     }
 
     /**
+     * Gets the current database connection.
+     *
+     * @return current database connection
+     */
+    public static Connection getConnection() {
+        return con;
+    }
+
+    /**
      * Disconnect from the MySQL database.
      */
     public static void disconnect() {
