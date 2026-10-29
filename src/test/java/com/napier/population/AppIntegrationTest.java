@@ -19,6 +19,11 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Integration tests for the Population Reporting System.
+ * Tests implemented report functionality against the real Docker world database.
+ */
+
 public class AppIntegrationTest {
 
     static Connection con;
