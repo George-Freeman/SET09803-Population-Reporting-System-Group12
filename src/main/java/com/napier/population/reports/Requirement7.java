@@ -25,6 +25,9 @@ public class Requirement7 {
      */
     public List<City> getAllCitiesWorld() {
         List<City> cities = new ArrayList<>();
+        if (con == null) {
+            return cities;
+        }
 
         String sql =
                 "SELECT ci.Name, c.Name AS Country, "

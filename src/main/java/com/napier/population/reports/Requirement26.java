@@ -23,6 +23,10 @@ public class Requirement26 {
     public long getWorldPopulation() {
         long population = 0;
 
+        if (con == null) {
+            return population;
+        }
+
         String sql = "SELECT SUM(Population) AS population FROM country";
 
         try (PreparedStatement stmt = con.prepareStatement(sql);
