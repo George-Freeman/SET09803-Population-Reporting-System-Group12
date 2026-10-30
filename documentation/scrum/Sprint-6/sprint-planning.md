@@ -6,7 +6,7 @@
 
 **Planning meeting attendees:** Pending confirmation
 
-**Sprint start date:** Pending team confirmation
+**Sprint start date:** 30th October 2026
 
 **Sprint end date:** Pending team confirmation
 
@@ -62,12 +62,9 @@ Each team member should estimate every selected issue using the agreed planning-
 Estimate reasoning will be added after all five members submit their scores and the team agrees on the final costs.
 
 ## Planning Actions Still Required
-- Confirm the planning meeting attendees.
-- Confirm the sprint goal, start date and end date.
 - Assign owners to #102 and #104.
 - Collect George and Angela's scores for all five issues.
 - Collect Nekoro's scores for #121, #122 and #123.
 - Agree on the final estimates and record the reasons.
-- Move the selected issues into the Sprint 6 backlog on the project board.
 
 Rohan Phillips prepared this initial planning draft as Scrum Master. It must be reviewed and completed by the team before Sprint 6 is finalised.
