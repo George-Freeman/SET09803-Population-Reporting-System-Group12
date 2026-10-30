@@ -1,12 +1,12 @@
 # Sprint 5 - Sprint Planning
 
-**Date:** 26 October 2026
+**Date:** 26th October 2026
 
 **Attendees:** George Freeman, Rhys John Paterson, Nekoro Spencer, Angela Lynn Wandera and Rohan Phillips.
 
-**Sprint start date:** 26 October 2026
+**Sprint start date:** 26th October 2026
 
-**Sprint end date:** Pending team confirmation
+**Sprint end date:** 30th October 2026
 
 ## Sprint Goal
 Complete the remaining population reports and improve the application's unit tests, integration testing and database configuration.
