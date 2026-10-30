@@ -65,5 +65,3 @@ Estimate reasoning will be added after all five members submit their scores and 
 - Assign owners to #102 and #104.
 - Collect George and Angela's scores for all five issues.
 - Agree on the final estimates and record the reasons.
-
-Rohan Phillips prepared this initial planning draft as Scrum Master. It must be reviewed and completed by the team before Sprint 6 is finalised.
