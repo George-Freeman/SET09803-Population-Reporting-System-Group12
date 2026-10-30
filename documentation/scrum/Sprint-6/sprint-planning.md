@@ -22,54 +22,51 @@ No carry-over items have been identified. All seven Sprint 5 issues are closed.
 |-------|-------------|
 | None currently | All Sprint 5 issues were completed and closed |
 
-## Product Backlog Candidates
-The following open issues are candidates for Sprint 6. They have not yet been committed to the sprint. The team must check whether any older issues have already been resolved by later work before selecting them.
+## Product Backlog Items Added to the Sprint Backlog
+The following five issues have been selected for Sprint 6. Three owners are confirmed and the remaining two owners are pending team agreement.
 
-| Issue | Description | Selected | Owner |
-|-------|-------------|----------|-------|
-| #63 | Fix interactive report selection in CI | Pending | To be assigned |
-| #102 | Update the GitHub Actions workflow | Pending | To be assigned |
-| #103 | Add JaCoCo and Codecov | Pending | To be assigned |
-| #104 | Automate GitHub Releases | Pending | To be assigned |
-| #105 | Set up bug reporting | Pending | To be assigned |
-| #106 | Add the required badges | Pending | To be assigned |
-| #107 | Review code using PMD | Pending | To be assigned |
-| #121 | All capital cities in the world | Pending | To be assigned |
-| #122 | All capital cities in a continent | Pending | To be assigned |
-| #123 | All capital cities in a region | Pending | To be assigned |
+| Issue | Description | Owner |
+|-------|-------------|-------|
+| #102 | Update the GitHub Actions workflow | To be assigned |
+| #104 | Automate GitHub Releases | To be assigned |
+| #121 | All capital cities in the world | Rohan Phillips |
+| #122 | All capital cities in a continent | Nekoro Spencer |
+| #123 | All capital cities in a region | Rhys John Paterson |
 
 ## Sprint Backlog
-The final Sprint 6 backlog will be added after the team confirms which issues it can realistically complete during the sprint.
+Sprint 6 combines delivery-pipeline improvements with the three remaining capital-city reports.
 
 Confirmed assignments:
-- None yet.
+- #121: Rohan Phillips.
+- #122: Nekoro Spencer.
+- #123: Rhys John Paterson.
 
 Assignments still to be confirmed:
-- All selected Sprint 6 issues.
+- #102: Update the GitHub Actions workflow.
+- #104: Automate GitHub Releases.
 
 ## Planning Poker
 Each team member should estimate every selected issue using the agreed planning-poker scale. The Estimated Cost will be calculated after all five estimates are submitted.
 
 | Issue | Description | George | Rhys | Nekoro | Angela | Rohan | Estimated Cost |
 |-------|-------------|-------:|-----:|-------:|-------:|------:|---------------:|
-| Pending | Add selected issue | - | - | - | - | - | - |
+| #102 | Update the GitHub Actions workflow | - | 3 | 3 | - | 3 | Pending |
+| #104 | Automate GitHub Releases | - | 5 | 3 | - | 4 | Pending |
+| #121 | All capital cities in the world | - | 2 | Pending | - | 2 | Pending |
+| #122 | All capital cities in a continent | - | 3 | Pending | - | 3 | Pending |
+| #123 | All capital cities in a region | - | 3 | Pending | - | 3 | Pending |
 
 **Total estimated cost:** Pending planning-poker results.
 
 ### Estimate Reasoning
-After the team discusses the selected issues, add a short reason explaining why each final estimate was agreed.
-
-| Issue | Estimated Cost | Reason |
-|-------|---------------:|--------|
-| Pending | - | Pending team discussion |
+Estimate reasoning will be added after all five members submit their scores and the team agrees on the final costs.
 
 ## Planning Actions Still Required
 - Confirm the planning meeting attendees.
-- Review whether #63 and #102 are still required after the recent CI changes.
-- Select a realistic set of issues for Sprint 6.
 - Confirm the sprint goal, start date and end date.
-- Assign an owner to every selected issue.
-- Collect planning-poker scores from all five members.
+- Assign owners to #102 and #104.
+- Collect George and Angela's scores for all five issues.
+- Collect Nekoro's scores for #121, #122 and #123.
 - Agree on the final estimates and record the reasons.
 - Move the selected issues into the Sprint 6 backlog on the project board.
 
