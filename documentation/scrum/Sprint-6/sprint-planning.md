@@ -50,11 +50,11 @@ Each team member should estimate every selected issue using the agreed planning-
 
 | Issue | Description | George | Rhys | Nekoro | Angela | Rohan | Estimated Cost |
 |-------|-------------|-------:|-----:|-------:|-------:|------:|---------------:|
-| #102 | Update the GitHub Actions workflow | - | 3 | 3 | - | 3 | Pending |
-| #104 | Automate GitHub Releases | - | 5 | 3 | - | 4 | Pending |
-| #121 | All capital cities in the world | - | 2 | 2 | - | 2 | Pending |
-| #122 | All capital cities in a continent | - | 3 | 2 | - | 3 | Pending |
-| #123 | All capital cities in a region | - | 3 | 3 | - | 3 | Pending |
+| #102 | Update the GitHub Actions workflow | 4 | 3 | 3 | - | 3 | Pending |
+| #104 | Automate GitHub Releases | 4 | 5 | 3 | - | 4 | Pending |
+| #121 | All capital cities in the world | 2 | 2 | 2 | - | 2 | Pending |
+| #122 | All capital cities in a continent | 3 | 3 | 2 | - | 3 | Pending |
+| #123 | All capital cities in a region | 3 | 3 | 3 | - | 3 | Pending |
 
 **Total estimated cost:** Pending planning-poker results.
 
@@ -63,5 +63,5 @@ Estimate reasoning will be added after all five members submit their scores and 
 
 ## Planning Actions Still Required
 - Assign owners to #102 and #104.
-- Collect George and Angela's scores for all five issues.
+- Collect Angela's scores for all five issues.
 - Agree on the final estimates and record the reasons.
