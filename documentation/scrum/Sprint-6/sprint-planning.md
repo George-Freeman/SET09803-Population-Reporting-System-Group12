@@ -23,11 +23,11 @@ No carry-over items have been identified. All seven Sprint 5 issues are closed.
 | None currently | All Sprint 5 issues were completed and closed |
 
 ## Product Backlog Items Added to the Sprint Backlog
-The following five issues have been selected for Sprint 6. Three owners are confirmed and the remaining two owners are pending team agreement.
+The following five issues have been selected for Sprint 6. Four owners are confirmed and the remaining owner is pending team agreement.
 
 | Issue | Description | Owner |
 |-------|-------------|-------|
-| #102 | Update the GitHub Actions workflow | To be assigned |
+| #102 | Update the GitHub Actions workflow | George Freeman |
 | #104 | Automate GitHub Releases | To be assigned |
 | #121 | All capital cities in the world | Rohan Phillips |
 | #122 | All capital cities in a continent | Nekoro Spencer |
@@ -37,12 +37,12 @@ The following five issues have been selected for Sprint 6. Three owners are conf
 Sprint 6 combines delivery-pipeline improvements with the three remaining capital-city reports.
 
 Confirmed assignments:
+- #102: George Freeman.
 - #121: Rohan Phillips.
 - #122: Nekoro Spencer.
 - #123: Rhys John Paterson.
 
-Assignments still to be confirmed:
-- #102: Update the GitHub Actions workflow.
+Assignment still to be confirmed:
 - #104: Automate GitHub Releases.
 
 ## Planning Poker
@@ -62,6 +62,6 @@ Each team member should estimate every selected issue using the agreed planning-
 Estimate reasoning will be added after all five members submit their scores and the team agrees on the final costs.
 
 ## Planning Actions Still Required
-- Assign owners to #102 and #104.
+- Assign an owner to #104.
 - Collect Angela's scores for all five issues.
 - Agree on the final estimates and record the reasons.
