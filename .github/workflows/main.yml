@@ -9,7 +9,7 @@ on:
       - release
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   UnitTests:
@@ -68,8 +68,12 @@ jobs:
 
   build:
       name: Build and Start Using Docker Compose
+      needs: [ UnitTests, IntegrationTests ]
+      permissions:
+          contents: write
       runs-on: ubuntu-24.04
       timeout-minutes: 15
+
 
       steps:
         - name: Checkout repository
