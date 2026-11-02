@@ -106,8 +106,8 @@ public class App {
     public static void main(String[] args) {
         // Connect to database based on CLI / Docker arguments according to Lab 7
         if (args.length < 1) {
-            // Local execution in IntelliJ connecting to Docker MySQL exposed on port 33060
-            connect("localhost:33060", 2500);
+            // Local execution in IntelliJ connecting to Docker MySQL exposed on port 33061
+            connect("localhost:33061", 2500);
         } else if (args.length == 1) {
             // Location provided with default 0 delay
             connect(args[0], 0);
@@ -524,7 +524,28 @@ public class App {
                     requirement17.printCapitalCities(capitalCities17);
                     break;
                 }
-                case 19:
+                case 18: {
+                    String continent18 = null;
+                    while (continent18 == null) {
+                        System.out.println("Enter continent:");
+                        String inputContinent = scanner.nextLine().trim();
+                        continent18 = continents.stream()
+                                .filter(validContinent -> validContinent.equalsIgnoreCase(inputContinent))
+                                .findFirst()
+                                .orElse(null);
+                        if (continent18 == null) {
+                            System.out.println("Invalid continent. Try again.");
+                        }
+                    }
+
+                    Requirement18 requirement18 = new Requirement18(con);
+                    List<CapitalCity> capitalCities18 =
+                            requirement18.getCapitalCitiesByContinent(continent18);
+                    requirement18.printCapitalCities(capitalCities18);
+                    break;
+                }
+
+                case 19: {
                     System.out.print("Enter region name (e.g. Western Europe, Caribbean, Middle East): ");
                     String regionInput = scanner.nextLine().trim();
 
@@ -542,6 +563,7 @@ public class App {
                         req19.printCapitalCities(regionCapitals);
                     }
                     break;
+                }
                 case 20: {
                     int numberOfCapitalCities = 0;
                     while (numberOfCapitalCities <= 0) {
