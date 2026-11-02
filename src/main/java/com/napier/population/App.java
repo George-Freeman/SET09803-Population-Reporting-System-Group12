@@ -106,8 +106,8 @@ public class App {
     public static void main(String[] args) {
         // Connect to database based on CLI / Docker arguments according to Lab 7
         if (args.length < 1) {
-            // Local execution in IntelliJ connecting to Docker MySQL exposed on port 33061
-            connect("localhost:33061", 2500);
+            // Local execution in IntelliJ connecting to Docker MySQL exposed on port 33060
+            connect("localhost:33060", 2500);
         } else if (args.length == 1) {
             // Location provided with default 0 delay
             connect(args[0], 0);
