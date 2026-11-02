@@ -52,7 +52,7 @@ Angela Lynn Wandera,
 | 14 | The top N populated cities in a region where N is provided by the user. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/232d10d3-0ec1-431c-ab93-4a109eba3a2b" />|
 | 15 | The top N populated cities in a country where N is provided by the user. | Yes | <img width="300" alt="Image" src="https://github.com/user-attachments/assets/5840bc62-63f3-4024-86de-724b74510a40" />|
 | 16 | The top N populated cities in a district where N is provided by the user. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/acac6851-6e23-4c97-8a41-da0113e9d5cc" /> |
-| 17 | All the capital cities in the world organised by largest population to smallest. | No | |
+| 17 | All the capital cities in the world organised by largest population to smallest. | Yes | <img width="300" alt="Requirement 17 capital cities world report" src="https://github.com/user-attachments/assets/acf8dd33-6b72-4d5c-8507-398f37e694d2" /> |
 | 18 | All the capital cities in a continent organised by largest population to smallest. | No | |
 | 19 | All the capital cities in a region organised by largest to smallest. | Yes |<img width="300" alt="Image" src="https://github.com/user-attachments/assets/d9cc9eb5-202b-4976-bfd4-e5d62d17eae3" /> |
 | 20 | The top N populated capital cities in the world where N is provided by the user. | Yes | <img width="300" alt="image" src="https://github.com/user-attachments/assets/90dffac6-5f6f-429c-9589-a79502887f85" />|

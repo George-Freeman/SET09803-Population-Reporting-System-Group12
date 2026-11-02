@@ -516,7 +516,14 @@ public class App {
                     }
                     break;
                 }
+                case 17: {
+                    Requirement17 requirement17 = new Requirement17(con);
+                    List<CapitalCity> capitalCities17 =
+                            requirement17.getCapitalCitiesWorld();
 
+                    requirement17.printCapitalCities(capitalCities17);
+                    break;
+                }
                 case 19:
                     System.out.print("Enter region name (e.g. Western Europe, Caribbean, Middle East): ");
                     String regionInput = scanner.nextLine().trim();
@@ -535,7 +542,6 @@ public class App {
                         req19.printCapitalCities(regionCapitals);
                     }
                     break;
-
                 case 20: {
                     int numberOfCapitalCities = 0;
                     while (numberOfCapitalCities <= 0) {
