@@ -515,7 +515,14 @@ public class App {
                     }
                     break;
                 }
+                case 17: {
+                    Requirement17 requirement17 = new Requirement17(con);
+                    List<CapitalCity> capitalCities17 =
+                            requirement17.getCapitalCitiesWorld();
 
+                    requirement17.printCapitalCities(capitalCities17);
+                    break;
+                }
                 case 20: {
                     int numberOfCapitalCities = 0;
                     while (numberOfCapitalCities <= 0) {
