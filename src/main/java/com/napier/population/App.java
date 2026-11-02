@@ -10,6 +10,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -523,6 +524,24 @@ public class App {
                     requirement17.printCapitalCities(capitalCities17);
                     break;
                 }
+                case 19:
+                    System.out.print("Enter region name (e.g. Western Europe, Caribbean, Middle East): ");
+                    String regionInput = scanner.nextLine().trim();
+
+                    if (regionInput.isEmpty()) {
+                        System.out.println("Error: Region cannot be blank.");
+                        break;
+                    }
+
+                    Requirement19 req19 = new Requirement19(con);
+                    ArrayList<City> regionCapitals = req19.getCapitalCitiesByRegion(regionInput);
+
+                    if (regionCapitals == null || regionCapitals.isEmpty()) {
+                        System.out.println("No capital cities found for region: " + regionInput);
+                    } else {
+                        req19.printCapitalCities(regionCapitals);
+                    }
+                    break;
                 case 20: {
                     int numberOfCapitalCities = 0;
                     while (numberOfCapitalCities <= 0) {
