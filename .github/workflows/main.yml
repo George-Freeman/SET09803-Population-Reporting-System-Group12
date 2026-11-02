@@ -9,7 +9,7 @@ on:
       - release
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   UnitTests:
@@ -68,8 +68,12 @@ jobs:
 
   build:
       name: Build and Start Using Docker Compose
+      needs: [ UnitTests, IntegrationTests ]
+      permissions:
+          contents: write
       runs-on: ubuntu-24.04
       timeout-minutes: 15
+
 
       steps:
         - name: Checkout repository
@@ -104,3 +108,15 @@ jobs:
         - name: Clean up containers
           if: always()
           run: docker compose down --volumes --remove-orphans
+
+        - name: Create GitHub Release
+          if: github.ref == 'refs/heads/master' && success()
+          uses: softprops/action-gh-release@v1
+          with:
+            tag_name: v1.1.${{ github.run_number }}
+            name: Release v1.1.${{ github.run_number }}
+            draft: false
+            prerelease: false
+            files: target/*.jar
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
