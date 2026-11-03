@@ -63,11 +63,4 @@ These short reasons were added after Sprint 3 to record why the team considered 
 ## Notes
 This remains a planning draft for team review, related to #74.
 
-Rohan Phillips is preparing the documentation as Scrum Master. The four named members supplied estimates; this does not confirm meeting attendance.
-
 Nekoro's score for #38 was updated from 8 to 5 at Rohan's request. The scale used for the sprint poker is 1-5. All other submitted scores are unchanged. Final estimates remain pending team agreement; no average or agreed sprint total has been recorded.
-
-Before finalising this document, confirm:
-- Planning meeting attendees.
-- Common estimation scale and final points.
-
