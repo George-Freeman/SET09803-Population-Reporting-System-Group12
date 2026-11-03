@@ -524,7 +524,28 @@ public class App {
                     requirement17.printCapitalCities(capitalCities17);
                     break;
                 }
-                case 19:
+                case 18: {
+                    String continent18 = null;
+                    while (continent18 == null) {
+                        System.out.println("Enter continent:");
+                        String inputContinent = scanner.nextLine().trim();
+                        continent18 = continents.stream()
+                                .filter(validContinent -> validContinent.equalsIgnoreCase(inputContinent))
+                                .findFirst()
+                                .orElse(null);
+                        if (continent18 == null) {
+                            System.out.println("Invalid continent. Try again.");
+                        }
+                    }
+
+                    Requirement18 requirement18 = new Requirement18(con);
+                    List<CapitalCity> capitalCities18 =
+                            requirement18.getCapitalCitiesByContinent(continent18);
+                    requirement18.printCapitalCities(capitalCities18);
+                    break;
+                }
+
+                case 19: {
                     System.out.print("Enter region name (e.g. Western Europe, Caribbean, Middle East): ");
                     String regionInput = scanner.nextLine().trim();
 
@@ -542,6 +563,7 @@ public class App {
                         req19.printCapitalCities(regionCapitals);
                     }
                     break;
+                }
                 case 20: {
                     int numberOfCapitalCities = 0;
                     while (numberOfCapitalCities <= 0) {
