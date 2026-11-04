@@ -74,7 +74,6 @@ jobs:
       runs-on: ubuntu-24.04
       timeout-minutes: 15
 
-
       steps:
         - name: Checkout repository
           uses: actions/checkout@v5
