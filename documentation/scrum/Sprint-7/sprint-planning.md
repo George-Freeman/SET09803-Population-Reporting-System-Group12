@@ -6,7 +6,7 @@
 
 **Planning meeting attendees:** Pending confirmation
 
-**Sprint start date:** Pending team confirmation
+**Sprint start date:** 9th November 2026
 
 **Sprint end date:** Pending team confirmation
 
@@ -44,19 +44,12 @@ Each participating team member estimated every selected issue using the agreed p
 
 **Total estimated cost:** 10.75 points.
 
-### Rohan's Estimates
-- #103: 4 - This includes Maven configuration, GitHub Actions, an external Codecov setup, the README badge and checking the coverage results.
-- #105: 2 - This mainly requires a clear GitHub issue template and checking that it appears correctly when a new bug is reported.
-- #106: 2 - Adding badges is straightforward, but every badge link must be checked and the coverage badge depends on #103.
-- #107: 3 - PMD must be run across the project, useful warnings need to be reviewed and fixed carefully, and the full test suite must still pass.
-
 ### Estimate Reasoning
 The final shared reasons will be added after the team agrees on the estimated costs.
 
 ## Planning Actions Still Required
-- Confirm the Sprint 7 start and end dates.
+- Confirm the Sprint 7 end date.
 - Confirm the planning meeting attendees.
 - Agree on the final sprint goal.
 - Assign an owner to each issue.
-- Agree on the final estimates and record the shared reasons.
-- Complete the remaining Sprint 6 closure actions.
+
