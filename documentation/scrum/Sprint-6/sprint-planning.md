@@ -4,16 +4,14 @@
 
 **Team members:** George Freeman, Rhys John Paterson, Nekoro Spencer and Rohan Phillips.
 
-**Planning meeting attendees:** Pending confirmation
+**Planning meeting attendees:** George Freeman, Rhys John Paterson, Nekoro Spencer and Rohan Phillips.
 
 **Sprint start date:** 30th October 2026
 
-**Sprint end date:** Pending team confirmation
+**Sprint end date:** 9th November 2026
 
-## Draft Sprint Goal
+## Sprint Goal
 Improve the delivery pipeline and code quality while completing the remaining capital-city reports.
-
-The team must review and agree on the final goal after selecting a realistic amount of work from the product backlog.
 
 ## Sprint 5 Issues Carried Over
 No carry-over items have been identified. All seven Sprint 5 issues are closed.
@@ -57,7 +55,11 @@ Each participating team member estimated every selected issue using the agreed p
 **Total estimated cost:** 15.00 points.
 
 ### Estimate Reasoning
-Estimate reasoning will be added after the team agrees on the final costs.
 
-## Planning Actions Still Required
-- Agree on the final estimates and record the reasons.
+| Issue | Estimated Cost | Reason |
+|-------|---------------:|--------|
+| #102 | 3.25 | The workflow had to separate unit tests, integration tests and the build while keeping the existing Docker checks working in the correct order. |
+| #104 | 4.00 | This required release permissions, a successful master build and uploading the packaged JAR automatically without creating releases from feature branches. |
+| #121 | 2.00 | This was a straightforward report using the existing capital-city model, with one query to retrieve and order every world capital by population. |
+| #122 | 2.75 | This added continent input checking and filtering to the capital-city report while keeping the results ordered correctly. |
+| #123 | 3.00 | This required region input handling, database filtering and checks that the correct capital cities were returned in population order. |
