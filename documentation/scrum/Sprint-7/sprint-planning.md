@@ -22,15 +22,20 @@ All five Sprint 6 issues are closed. The remaining closure actions are to finali
 
 | Issue | Description | Owner |
 |-------|-------------|-------|
-| #103 | Add JaCoCo and Codecov | Pending |
-| #105 | Set up bug reporting | Pending |
-| #106 | Add the required badges | Pending |
+| #103 | Add JaCoCo and Codecov | Rohan Phillips |
+| #105 | Set up bug reporting | George Freeman |
+| #106 | Add the required badges | Nekoro Spencer |
 | #107 | Review code using PMD | Pending |
 
 ## Sprint Backlog
 Sprint 7 focuses on test coverage, repository reporting and Java code quality.
 
-Assignments are pending team confirmation.
+Confirmed assignments:
+-#103: Rohan Phillips.
+-#105: George Freeman.
+-#106: Nekoro Spencer.
+-#107: 
+
 
 ## Planning Poker
 Each participating team member estimated every selected issue using the agreed planning-poker scale. The Estimated Cost is the average of the four submitted scores.
@@ -50,6 +55,3 @@ The final shared reasons will be added after the team agrees on the estimated co
 ## Planning Actions Still Required
 - Confirm the Sprint 7 end date.
 - Confirm the planning meeting attendees.
-- Agree on the final sprint goal.
-- Assign an owner to each issue.
-
