@@ -48,7 +48,7 @@ public class Requirement27 {
         // Offline test fallback when running unit tests without live MySQL connection
         if (this.con == null) {
             if ("Europe".equalsIgnoreCase(continent.trim())) {
-                return 730074600L;
+                return 730_074_600L;
             }
             System.out.println("Error: Database connection is not available.");
             return -1L;

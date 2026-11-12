@@ -19,7 +19,7 @@ public class App {
     /**
      * Connection to the MySQL database.
      */
-    private static Connection con = null;
+    private static Connection con;
 
     /**
      * Connect to the MySQL database.
@@ -33,7 +33,7 @@ public class App {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             System.out.println("Could not load SQL driver");
-            System.exit(-1);
+            return;
         }
 
         String url = "jdbc:mysql://" + location + "/world?allowPublicKeyRetrieval=true&useSSL=false";
@@ -87,8 +87,8 @@ public class App {
             try {
                 con.close();
                 System.out.println("Database connection closed.");
-            } catch (Exception e) {
-                System.out.println("Error closing connection to database");
+            } catch (SQLException e) {
+                System.out.println("Error closing connection to database: " + e.getMessage());
             }
         }
     }
@@ -163,7 +163,9 @@ public class App {
                         String finalC = continent;
                         continent = continents.stream().filter(c -> c.equalsIgnoreCase(finalC)).findFirst().orElse(null);
 
-                        if (continent != null) break;
+                        if (continent != null) {
+                            break;
+                        }
                         System.out.println("Invalid continent. Try again.\n");
                     }
 
