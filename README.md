@@ -87,3 +87,13 @@ Compile the project using Maven:
 ```bash
 mvn compile
 ```
+
+## Bug Reporting 
+
+Bugs can be reported using the Bug Report form under GitHub Issues.
+
+when fixing a reported bug:
+1. Create a branch for the fix
+2. Reference the bug issue in the pull request description using 'Fixes #<issue-number>'.
+3. Review and merge the pull request once the fix has been tested.
+4. Close the bug issue once the fix has been merged.
