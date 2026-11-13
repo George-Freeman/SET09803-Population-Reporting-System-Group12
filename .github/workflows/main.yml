@@ -39,6 +39,14 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
 
+      - name: Upload unit-test coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./target/site/jacoco/jacoco.xml
+          flags: unittests
+          fail_ci_if_error: true
+
   IntegrationTests:
     name: Integration Tests
     runs-on: ubuntu-24.04
@@ -63,6 +71,14 @@ jobs:
 
       - name: Run Integration Tests
         run: mvn -Dtest=com.napier.population.AppIntegrationTest test
+
+      - name: Upload integration-test coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./target/site/jacoco/jacoco.xml
+          flags: integration
+          fail_ci_if_error: true
 
       - name: Show database logs
         if: always()
