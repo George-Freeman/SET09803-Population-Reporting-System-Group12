@@ -1,10 +1,11 @@
 # SET09803-Population-Reporting-System
 
 ![Commit activity](https://img.shields.io/github/commit-activity/m/George-Freeman/SET09803-Population-Reporting-System-Group12)
-![Build](https://img.shields.io/github/actions/workflow/status/George-Freeman/SET09803-Population-Reporting-System-Group12/main.yml?label=Build)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](Licence.md)
-![Release](https://img.shields.io/github/v/release/George-Freeman/SET09803-Population-Reporting-System-Group12)
-![Develop build](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml/badge.svg?branch=develop)
+[![Build master](https://img.shields.io/github/actions/workflow/status/George-Freeman/SET09803-Population-Reporting-System-Group12/main.yml?branch=master&label=Build%20(master))](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml?query=branch%3Amaster)
+[![Build develop](https://img.shields.io/github/actions/workflow/status/George-Freeman/SET09803-Population-Reporting-System-Group12/main.yml?branch=develop&label=Build%20(develop))](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml?query=branch%3Adevelop)
+[![Code coverage master](https://codecov.io/gh/George-Freeman/SET09803-Population-Reporting-System-Group12/branch/master/graph/badge.svg)](https://codecov.io/gh/George-Freeman/SET09803-Population-Reporting-System-Group12)
+[![Licence](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](Licence.md)
+[![Latest release](https://img.shields.io/github/v/release/George-Freeman/SET09803-Population-Reporting-System-Group12)](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/releases/latest)
 
 ## About
 The aim of the project is to develop a population reporting system using Java, Maven, MySQL and Docker. The system will use the MySQL World database to produce population reports for countries, cities, and capital cities.
