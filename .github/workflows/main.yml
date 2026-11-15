@@ -9,7 +9,7 @@ on:
       - release
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   UnitTests:
@@ -30,6 +30,14 @@ jobs:
 
       - name: Run Unit Tests
         run: mvn -Dtest="com.napier.population.reports.*Test" test
+
+      - name: Upload unit-test coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./target/site/jacoco/jacoco.xml
+          flags: unittests
+          fail_ci_if_error: true
 
   IntegrationTests:
     name: Integration Tests
@@ -56,6 +64,14 @@ jobs:
       - name: Run Integration Tests
         run: mvn -Dtest=com.napier.population.AppIntegrationTest test
 
+      - name: Upload integration-test coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./target/site/jacoco/jacoco.xml
+          flags: integration
+          fail_ci_if_error: true
+
       - name: Show database logs
         if: always()
         run: docker logs world-db
@@ -68,8 +84,12 @@ jobs:
 
   build:
       name: Build and Start Using Docker Compose
+      needs: [ UnitTests, IntegrationTests ]
+      permissions:
+          contents: write
       runs-on: ubuntu-24.04
       timeout-minutes: 15
+
 
       steps:
         - name: Checkout repository
@@ -104,3 +124,15 @@ jobs:
         - name: Clean up containers
           if: always()
           run: docker compose down --volumes --remove-orphans
+
+        - name: Create GitHub Release
+          if: github.ref == 'refs/heads/master' && success()
+          uses: softprops/action-gh-release@v1
+          with:
+            tag_name: v1.1.${{ github.run_number }}
+            name: Release v1.1.${{ github.run_number }}
+            draft: false
+            prerelease: false
+            files: target/*.jar
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
