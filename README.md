@@ -1,7 +1,7 @@
 # SET09803-Population-Reporting-System
 
 ![Commit activity](https://img.shields.io/github/commit-activity/m/George-Freeman/SET09803-Population-Reporting-System-Group12)
-![Build](https://img.shields.io/github/actions/workflow/status/George-Freeman/SET09803-Population-Reporting-System-Group12/main.yml?label=Build)
+[![Build master](https://img.shields.io/github/actions/workflow/status/George-Freeman/SET09803-Population-Reporting-System-Group12/main.yml?branch=master&label=Build%20(master))](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml?query=branch%3Amaster)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](Licence.md)
 ![Release](https://img.shields.io/github/v/release/George-Freeman/SET09803-Population-Reporting-System-Group12)
 ![Develop build](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml/badge.svg?branch=develop)
