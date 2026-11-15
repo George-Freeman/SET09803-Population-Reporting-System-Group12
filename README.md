@@ -2,11 +2,10 @@
 
 ![Commit activity](https://img.shields.io/github/commit-activity/m/George-Freeman/SET09803-Population-Reporting-System-Group12)
 [![Build master](https://img.shields.io/github/actions/workflow/status/George-Freeman/SET09803-Population-Reporting-System-Group12/main.yml?branch=master&label=Build%20(master))](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml?query=branch%3Amaster)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](Licence.md)
-![Release](https://img.shields.io/github/v/release/George-Freeman/SET09803-Population-Reporting-System-Group12)
 ![Develop build](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml/badge.svg?branch=develop)
 [![Codecov](https://codecov.io/gh/George-Freeman/SET09803-Population-Reporting-System-Group12/graph/badge.svg?branch=master)](https://codecov.io/gh/George-Freeman/SET09803-Population-Reporting-System-Group12)
-
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](Licence.md)
+![Release](https://img.shields.io/github/v/release/George-Freeman/SET09803-Population-Reporting-System-Group12)
 ## About
 The aim of the project is to develop a population reporting system using Java, Maven, MySQL and Docker. The system will use the MySQL World database to produce population reports for countries, cities, and capital cities.
 
@@ -88,13 +87,3 @@ Compile the project using Maven:
 ```bash
 mvn compile
 ```
-
-## Bug Reporting 
-
-Bugs can be reported using the Bug Report form under GitHub Issues.
-
-when fixing a reported bug:
-1. Create a branch for the fix
-2. Reference the bug issue in the pull request description using 'Fixes #<issue-number>'.
-3. Review and merge the pull request once the fix has been tested.
-4. Close the bug issue once the fix has been merged.
