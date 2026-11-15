@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report a bug
+title: "[BUG] "
+labels: ["bug"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Describe the bug
+      placeholder: Explain what went wrong
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Explain the steps to reproducing the bug
+      placeholder: |
+        1. Start the application 
+        2. Select a requirement 
+        3. Enter the required information 
+        4. Observe the result
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: Describe what should happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behaviour
+      description: Describe what actually happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots or error messages.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other relevant context.
+    validations:
+      required: false
+
+
