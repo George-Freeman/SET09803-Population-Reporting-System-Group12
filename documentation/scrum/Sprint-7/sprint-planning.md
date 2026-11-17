@@ -4,19 +4,17 @@
 
 **Team members:** George Freeman, Rhys John Paterson, Nekoro Spencer, Rohan Phillips and Angela Lynn Wandera.
 
-**Planning meeting attendees:** Pending confirmation
+**Planning meeting attendees:** George Freeman, Rhys John Paterson, Nekoro Spencer, Rohan Phillips and Angela Lynn Wandera.
 
 **Sprint start date:** 9th November 2026
 
 **Sprint end date:** Pending team confirmation
 
-## Draft Sprint Goal
+## Sprint Goal
 Improve the project's quality checks and reporting by adding coverage reporting, bug-reporting support, required badges and a PMD code-quality review.
 
-The team must review and agree on the final sprint goal before the planning document is finalised.
-
 ## Sprint 6 Closure
-All five Sprint 6 issues are closed. The remaining closure actions are to finalise and merge the Sprint 6 planning documentation and verify the automatic GitHub release on `master`.
+Sprint 6 was completed, and its planned issues and documentation were merged.
 
 ## Product Backlog Items Added to the Sprint Backlog
 
@@ -28,7 +26,6 @@ All five Sprint 6 issues are closed. The remaining closure actions are to finali
 | #107 | Review code using PMD | Angela Lynn Wandera |
 | #140 | Update README with final project documentation | Rhys John Paterson |
 
-Issue #140 was added after Sprint 7 started because the final README documentation was needed for Code Review 2.
 
 ## Sprint Backlog
 Sprint 7 focuses on test coverage, repository reporting and Java code quality.
@@ -54,11 +51,8 @@ Each participating team member estimated every selected issue using the agreed p
 **Total estimated cost:** 14.00 points.
 
 ### Estimate Reasoning
-- **#103 - 3.80:** This needed Maven and GitHub Actions changes, Codecov setup, a README badge, and checks to make sure coverage was being reported correctly.
-- **#105 - 2.20:** The bug-reporting setup was fairly straightforward, but the template and the link between bugs, fixes and pull requests still needed to be checked.
-- **#106 - 1.80:** Adding badges was a small README change, but every badge had to point to the correct branch, workflow, release, coverage report or licence.
-- **#107 - 3.00:** PMD had to scan the whole project, useful warnings had to be selected and fixed carefully, and the tests and build had to be checked again afterward.
-- **#140 - 3.20:** The work is mainly documentation, but it covers the whole project. The requirements, screenshots, build instructions, tests, coverage, CI, bug reporting, Scrum process and licence all need to be checked and explained clearly.
-
-## Planning Actions Still Required
-- Confirm the Sprint 7 end date.
+- **#103:** This needed Maven and GitHub Actions changes, Codecov setup, a README badge, and checks to make sure coverage was being reported correctly.
+- **#105:** The bug-reporting setup was fairly straightforward, but the template and the link between bugs, fixes and pull requests still needed to be checked.
+- **#106:** Adding badges was a small README change, but every badge had to point to the correct branch, workflow, release, coverage report or licence.
+- **#107:** PMD had to scan the whole project, useful warnings had to be selected and fixed carefully, and the tests and build had to be checked again afterward.
+- **#140:** The work is mainly documentation, but it covers the whole project. The requirements, screenshots, build instructions, tests, coverage, CI, bug reporting, Scrum process and licence all need to be checked and explained clearly.
