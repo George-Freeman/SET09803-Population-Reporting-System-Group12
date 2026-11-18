@@ -8,10 +8,13 @@
 
 **Sprint start date:** 9th November 2026
 
-**Sprint end date:** Pending team confirmation
+**Sprint end date:** 18th November 2026
 
 ## Sprint Goal
 Improve the project's quality checks and reporting by adding coverage reporting, bug-reporting support, required badges and a PMD code-quality review.
+
+## Sprint 7 Closure
+Sprint 7 was completed on 18th November 2026. All five planned issues (#103, #105, #106, #107 and #140) were completed and merged into `develop`. The sprint goal was achieved.
 
 ## Sprint 6 Closure
 Sprint 6 was completed, and its planned issues and documentation were merged.
