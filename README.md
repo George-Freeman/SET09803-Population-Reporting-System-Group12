@@ -120,6 +120,9 @@ mvn -Dtest=com.napier.population.AppIntegrationTest test
 docker stop world-db 
 docker rm world-db
 ```
+
+Open `target/site/jacoco/index.html` in a web browser to view the coverage breakdown.
+
 ---
 ### JaCoCo & Codecov
 - **JaCoCo** is configured in `pom.xml` to measure line and branch code coverage during test execution.
@@ -130,6 +133,7 @@ To generate and view the local code coverage report:
 ```bash
 mvn clean test jacoco:report
 ```
+
 ---
 
 ## Continuous Integration
