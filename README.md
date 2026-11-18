@@ -1,11 +1,11 @@
 # SET09803-Population-Reporting-System
 
-![Commit activity](https://img.shields.io/github/commit-activity/m/George-Freeman/SET08803-Population-Reporting-System-Group12)
-[![Build master](https://img.shields.io/github/actions/workflow/status/George-Freeman/SET08803-Population-Reporting-System-Group12/main.yml?branch=master&label=Build%20(master))](https://github.com/George-Freeman/SET08803-Population-Reporting-System-Group12/actions/workflows/main.yml?query=branch%3Amaster)
+![Commit activity](https://img.shields.io/github/commit-activity/m/George-Freeman/SET09803-Population-Reporting-System-Group12)
+[![Build master](https://img.shields.io/github/actions/workflow/status/George-Freeman/SET09803-Population-Reporting-System-Group12/main.yml?branch=master&label=Build%20(master))](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml?query=branch%3Amaster)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](Licence.md)
-[![Release](https://img.shields.io/github/v/release/George-Freeman/SET08803-Population-Reporting-System-Group12)](https://github.com/George-Freeman/SET08803-Population-Reporting-System-Group12/releases)
-[![Develop build](https://github.com/George-Freeman/SET08803-Population-Reporting-System-Group12/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/George-Freeman/SET08803-Population-Reporting-System-Group12/actions/workflows/main.yml?query=branch%3Adevelop)
-[![Codecov](https://codecov.io/gh/George-Freeman/SET08803-Population-Reporting-System-Group12/graph/badge.svg?branch=master)](https://codecov.io/gh/George-Freeman/SET08803-Population-Reporting-System-Group12)
+[![Release](https://img.shields.io/github/v/release/George-Freeman/SET09803-Population-Reporting-System-Group12)](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/releases)
+[![Develop build](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12/actions/workflows/main.yml?query=branch%3Adevelop)
+[![Codecov](https://codecov.io/gh/George-Freeman/SET09803-Population-Reporting-System-Group12/graph/badge.svg?branch=master)](https://codecov.io/gh/George-Freeman/SET09803-Population-Reporting-System-Group12)
 
 ## About
 The aim of the project is to develop a population reporting system using Java, Maven, MySQL and Docker. The system uses the MySQL World database to produce 32 population reports for countries, cities, capital cities, and spoken languages.
@@ -77,8 +77,8 @@ All 32 requirements have been implemented, merged, and verified.
 Clone the repository:
 
 ```bash
-git clone https://github.com/George-Freeman/SET08803-Population-Reporting-System-Group12.git
-cd SET08803-Population-Reporting-System-Group12
+git clone https://github.com/George-Freeman/SET09803-Population-Reporting-System-Group12.git
+cd SET09803-Population-Reporting-System-Group12
 ```
 
 Build the application JAR using Maven:
@@ -91,7 +91,6 @@ Start the database and application containers with Docker Compose:
 
 ```bash
 docker compose up --build
-docker compose build
 ```
 
 Stop the application and remove containers and volumes:
@@ -111,6 +110,8 @@ mvn clean test
 ```
 
 Run the integration tests (requires the MySQL `world` database container running on port `33060`):
+
+
 
 ```bash
 docker build -t database ./db
