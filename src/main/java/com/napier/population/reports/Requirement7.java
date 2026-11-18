@@ -25,6 +25,9 @@ public class Requirement7 {
      */
     public List<City> getAllCitiesWorld() {
         List<City> cities = new ArrayList<>();
+        if (con == null) {
+            return cities;
+        }
 
         String sql =
                 "SELECT ci.Name, c.Name AS Country, "
@@ -38,10 +41,10 @@ public class Requirement7 {
 
             while (rset.next()) {
                 City city = new City();
-                city.name = rset.getString("Name");
-                city.country = rset.getString("Country");
-                city.district = rset.getString("District");
-                city.population = rset.getInt("Population");
+                city.setName(rset.getString("Name"));
+                city.setCountry(rset.getString("Country"));
+                city.setDistrict(rset.getString("District"));
+                city.setPopulation(rset.getInt("Population"));
                 cities.add(city);
             }
         } catch (SQLException e) {
@@ -75,10 +78,10 @@ public class Requirement7 {
         for (City city : cities) {
             System.out.printf(
                     "%-35s | %-45s | %-20s | %,12d%n",
-                    city.name,
-                    city.country,
-                    city.district,
-                    city.population);
+                    city.getName(),
+                    city.getCountry(),
+                    city.getDistrict(),
+                    city.getPopulation());
         }
 
         System.out.println(separator);
